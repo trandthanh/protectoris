@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get 'pages/comparison', as: :comparison
   get 'pages/contact', as: :contact
   get 'pages/about', as: :about
+
+  resources :products, only: [:index]
 end
