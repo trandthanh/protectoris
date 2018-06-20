@@ -10,9 +10,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2018_06_20_084853) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "packs", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.integer "number"
+    t.string "name"
+    t.text "description"
+    t.bigint "pack_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["pack_id"], name: "index_products_on_pack_id"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string "title"
+    t.date "date"
+    t.text "content"
+    t.string "author"
+    t.bigint "product_id"
+    t.bigint "pack_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["pack_id"], name: "index_reviews_on_pack_id"
+    t.index ["product_id"], name: "index_reviews_on_product_id"
+  end
+
+  add_foreign_key "products", "packs"
+  add_foreign_key "reviews", "packs"
+  add_foreign_key "reviews", "products"
 end
