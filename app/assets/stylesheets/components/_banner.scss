@@ -1,8 +1,32 @@
 .home-wrapper {
-  background-image: image-url("banner.jpg");
+  background-image: image-url("banner-home.png");
   background-size: cover;
   background-position: center;
-  padding: 50px 50px;
   margin-top: 100px;
-  height: 80vh;
+  height: 70vh;
+  position: relative;
+}
+
+.home-text {
+  position: absolute;
+  bottom: 60px;
+  left: 150px;
+  background-color: rgba(177, 181, 192, 0.6);
+  padding: 20px 20px;
+  h3 {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 36px;
+    color: white;
+    width: 420px;
+    display: wrap;
+  }
+  p {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    width: 350px;
+    display: wrap;
+  }
 }
