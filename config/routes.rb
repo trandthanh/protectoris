@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get 'pages/comparison', as: :comparison
+  get 'pages/contact', as: :contact
+  get 'pages/about', as: :about
 end
