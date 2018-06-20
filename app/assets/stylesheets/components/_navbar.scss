@@ -8,6 +8,25 @@
 .upper-navbar {
   height: 30px;
   background-color: $protectoris-darkblue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.contact-navbar {
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 30px;
+  color: white;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.fa-phone {
+  font-size: 13px;
 }
 
 .lower-navbar {
