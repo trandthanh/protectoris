@@ -7,11 +7,65 @@
 
 .upper-navbar {
   height: 30px;
-  background-color: #4DA3D0;
+  background-color: $protectoris-darkblue;
 }
 
 .lower-navbar {
   height: 70px;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 30px;
+  width: 100%;
+}
 
+.logo-navbar {
+  height: 50px;
+}
+
+.items-navbar {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.2px;
+  a {
+    text-decoration: none;
+    color: $protectoris-midgray;
+    font-weight: medium;
+    &:hover {
+      text-decoration: none;
+      color: $protectoris-lightgray;
+    }
+  }
+}
+
+#buy-navbar {
+  font-weight: bold;
+  color: $protectoris-blue;
+  width: 200px;
+  text-align: center;
+  &:hover {
+    background-color: $protectoris-blue;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.4s ease;
+    background: $protectoris-blue;
+    color: white;
+    padding:10px 20px;
+    &:after {
+      position: relative;
+    }
+  }
+}
+
+// Mobile
+
+@media only screen and (max-width: 768px) {
+  // .upper-navbar {
+  //   display: none !important;
+  // }
 }
