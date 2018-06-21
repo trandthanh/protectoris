@@ -39,3 +39,15 @@
     color: $protectoris-midgray;
   }
 }
+
+// Products
+.product-wrapper {
+  padding-top: 50px;
+  background-color: white;
+}
+.centrale-container {
+  background-image: image-url("centrale-main.png");
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+}
