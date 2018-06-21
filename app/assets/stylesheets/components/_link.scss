@@ -1,0 +1,20 @@
+.voir-plus-link {
+  display: block;
+  letter-spacing: 1.2px;
+  padding: 12px 0;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 16px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.voir-plus-link--primary {
+  color: $protectoris-darkblue;
+}
+
+.voir-plus-link--border {
+}
+
