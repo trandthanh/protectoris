@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
 
-  get 'pages/comparison', as: :comparison
-  get 'pages/contact', as: :contact
-  get 'pages/about', as: :about
+  get 'comparison', to: 'pages#comparison'
+  get 'contact', to: 'pages#contact'
+  get 'about', to: 'pages#about'
+  get 'offer', to: 'pages#offer'
 
   resources :products, only: [:index]
 end

@@ -118,6 +118,34 @@
   vertical-align: center;
 }
 
+.mobile-container {
+  background-image: image-url("mobile-banner.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  //position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  h2 {
+    font-family: "Roboto";
+    margin-bottom: 40px;
+    color: $protectoris-darkblue;
+  }
+  p {
+    font-size: 16px;
+    color: $protectoris-midgray;
+  }
+}
+
+.mobile-text {
+  //position: absolute;
+  //top: 120px;
+  margin-right: 100px;
+  width: 400px;
+  vertical-align: center;
+}
+
 // General
 
 hr {
