@@ -1,20 +1,47 @@
 .voir-plus-link {
   display: block;
-  letter-spacing: 1.2px;
-  padding: 12px 0;
+  letter-spacing: 1px;
+  padding: 12px 20px;
   overflow: hidden;
   z-index: 1;
   cursor: pointer;
   font-size: 16px;
-  &:focus {
-    outline: none;
+  position: relative;
+  color: $protectoris-darkblue;
+  width: 250px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 42px;
+    background: $protectoris-darkblue;
+    transition: all 0.7s ease;
+    z-index: -1;
+  }
+  &:hover {
+    text-decoration: none;
+    color: white;
+    &:before {
+      width: 100%;
+    }
   }
 }
 
-.voir-plus-link--primary {
-  color: $protectoris-darkblue;
-}
 
-.voir-plus-link--border {
-}
+// button:before {
+//   content:'';
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   width: 0px;
+//   height: 42px;
+//   background: rgba(255,255,255,0.3);
+//   border-radius: 5px;
+//   transition: all 2s ease;
+// }
 
+// button:hover:before {
+//   width: 100%;
+// }
