@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+3.times do
+  new_review = Review.new(title: "Super produit!", date: DateTime.new(2009,9,1,17), content: "Facile à installer et donc prise en main rapide. Je recommande!", author: "Selma H.")
+  new_review.save!
+end
+
+
+puts "Reviews seeded!"
+

@@ -131,9 +131,36 @@
       <h2>UN LARGE CHOIX DE DETECTEURS</h2>
       <p>Des détecteurs efficaces et professionnels pour détecter les intrus dès l’extérieur. Les détecteurs d’incendie et spécifiques (inondation, température, etc.) complètent la gamme des détecteurs d’intrusion pour l’intérieur.</p>
       <%= link_to root_path, class: "voir-plus-link" do %>
-        <i class="fas fa-caret-right"></i> Gamme de détecteurs
+        <i class="fas fa-caret-right"></i> Nos 10 détecteurs
       <% end %>
     </div>
   </div>
+
+  <div class="sirene-container">
+    <div class="sirene-text">
+      <h2>DEUX SELECTIONS DE SIRENES</h2>
+      <p>Nous mettons à votre disposition 2 sirènes: une d'intérieur et une d'extérieur afin de donner l'alerte le plus efficacement possible.</p>
+      <%= link_to root_path, class: "voir-plus-link" do %>
+        <i class="fas fa-caret-right"></i> Choix de sirènes
+      <% end %>
+    </div>
+  </div>
+
+  <div class="review-banner">
+    <div class="row">
+        <% @reviews.each do |r| %>
+          <div class="col-sm-12 col-md-4">
+            <div class="review-card text-center">
+              <%= image_tag ("ben-avatar.png"), class: "review-avatar" %>
+              <h4><%= r.author %></h4>
+              <h6><%= r.date %></h6>
+              <h5><%= r.title %></h5>
+              <p>"<%= r.content %>"</p>
+            </div>
+          </div>
+        <% end %>
+    </div>
+  </div>
+
 </div>
 
