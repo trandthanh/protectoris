@@ -1,1 +1,10 @@
-<h1>Hello</h1>
+
+<div class="packs-offer">
+  <% @packs.each do |p| %>
+    <p><%= p.description %></p>
+  <% end %>
+  <% @products.each do |p| %>
+    <p><%= p.name %></p>
+  <% end %>
+</div>
+

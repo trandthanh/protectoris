@@ -13,7 +13,8 @@ class PagesController < ApplicationController
   end
 
   def offer
-
+    @products = Product.all
+    @packs = Pack.all
   end
 
 end
