@@ -63,19 +63,18 @@ i {
 }
 
 #buy-navbar {
-  font-weight: bold;
-  color: $protectoris-blue;
-  width: 200px;
+  background-color: $protectoris-blue;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Monda", "Helvetica", "Open Sans";
+  letter-spacing: 1px;
+  width: 190px;
   text-align: center;
   &:hover {
-    background-color: $protectoris-blue;
-    color: white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    transition: all 0.4s ease;
-    background: $protectoris-blue;
-    color: white;
-    padding:10px 20px;
+    border: 2px solid $protectoris-blue;
+    background: white;
+    color: $protectoris-blue;
     &:after {
       position: relative;
     }
