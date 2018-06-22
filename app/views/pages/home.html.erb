@@ -100,14 +100,17 @@
 <!-- Pack -->
 
 <div class="pack-wrapper text-center">
-  <div class="pack-text">
+  <div class="pack-text text-center">
     <h2>DE QUOI SE COMPOSENT NOS PACKS ?</h2>
     <p>Nos packs ont été préconçus en fonction de vos retours: Pack Appartement, Pack Maison. Aucun de ces packs ne vous convient ? Aucun problème ! Nos packs sont entièrement personnalisables. </p>
     <p>L'équipe Protectoris reste à votre service et à votre écoute. Notre personnel technique basé à Paris vous assistera gratuitement par téléphone. Notre matériel est garanti 10 ans. </p>
+    <%= link_to "VOIR NOS PACKS", root_path, class: "call-to-action-button"  %>
   </div>
 </div>
 
 <hr>
+
+<!-- Produit -->
 
 <div class="product-wrapper">
   <div class="centrale-container">
@@ -122,4 +125,15 @@
       <% end %>
     </div>
   </div>
+
+  <div class="detecteur-container">
+    <div class="detecteur-text">
+      <h2>UN LARGE CHOIX DE DETECTEURS</h2>
+      <p>Des détecteurs efficaces et professionnels pour détecter les intrus dès l’extérieur. Les détecteurs d’incendie et spécifiques (inondation, température, etc.) complètent la gamme des détecteurs d’intrusion pour l’intérieur.</p>
+      <%= link_to root_path, class: "voir-plus-link" do %>
+        <i class="fas fa-caret-right"></i> Gamme de détecteurs
+      <% end %>
+    </div>
+  </div>
 </div>
+

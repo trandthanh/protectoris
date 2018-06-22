@@ -22,11 +22,11 @@
   background-image: image-url("pack-banner.jpg");
   background-size: cover;
   background-position: center;
-  height: 120vh;
+  height: 130vh;
 }
 
 .pack-text {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-left: 250px;
   padding-right: 250px;
   h2 {
@@ -69,6 +69,29 @@
   padding-left: 100px;
   width: 40%;
   vertical-align: center;
+}
+
+.detecteur-container {
+  background-image: image-url("detecteur-banner.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detecteur-text {
+  width: 400px;
+  h2 {
+    font-family: "Roboto";
+    margin-bottom: 40px;
+    color: $protectoris-darkblue;
+  }
+  p {
+    font-size: 16px;
+    color: $protectoris-midgray;
+  }
 }
 
 // General

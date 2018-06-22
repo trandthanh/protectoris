@@ -45,6 +45,31 @@ i {
   height: 50px;
 }
 
+.buy-button {
+  background-color: $protectoris-blue;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Monda", "Helvetica", "Open Sans";
+  letter-spacing: 1px;
+  width: 190px;
+  text-align: center;
+  &:hover {
+    border: 2px solid $protectoris-blue;
+    background: white;
+    color: $protectoris-blue;
+    &:after {
+      position: relative;
+    }
+  }
+}
+
+#white {
+  color: white;
+  &:hover {
+    color: $protectoris-blue;
+  }
+}
+
 .items-navbar {
   width: 48%;
   display: flex;
@@ -62,24 +87,7 @@ i {
   }
 }
 
-#buy-navbar {
-  background-color: $protectoris-blue;
-  color: white;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-family: "Monda", "Helvetica", "Open Sans";
-  letter-spacing: 1px;
-  width: 190px;
-  text-align: center;
-  &:hover {
-    border: 2px solid $protectoris-blue;
-    background: white;
-    color: $protectoris-blue;
-    &:after {
-      position: relative;
-    }
-  }
-}
+
 
 // Mobile
 
