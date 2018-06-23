@@ -1,9 +1,85 @@
+.offer-banner {
+  margin-top: 215px;
+  height: 60vh;
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), image-url("offer-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 70px;
+  h3 {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: white;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    width: 70%;
+    display: inline-block;
+  }
+}
+
 .packs-offer {
-  background-color: $protectoris-lightgray;
   margin-top: 100px;
   height: 100vh;
   color: $protectoris-darkblue;
   p {
     z-index: 1;
+  }
+}
+
+// Packs
+
+.flat-offer {
+  background-image: image-url("pack-flat.png");
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flat-description {
+  margin-top: 20px;
+  margin-right: 70px;
+  width: 30%;
+  h2 {
+    font-family: "Roboto";
+    margin-bottom: 40px;
+    color: $protectoris-darkblue;
+  }
+  h6 {
+    font-family: "Roboto";
+    font-weight: 300;
+    color: $protectoris-midgray;
+  }
+}
+
+.home-offer {
+  background-image: image-url("pack-home.png");
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home-description {
+  margin-top: 20px;
+  margin-left: 70px;
+  width: 30%;
+  h2 {
+    font-family: "Roboto";
+    margin-bottom: 40px;
+    color: $protectoris-darkblue;
+  }
+  h6 {
+    font-family: "Roboto";
+    font-weight: 300;
+    color: $protectoris-midgray;
   }
 }

@@ -1,3 +1,27 @@
+<div class="offer-banner text-center">
+  <h3>Des packs standards afin de faciliter votre choix.</h3>
+  <p>Nous avons pré-conçus un Pack Appartement (surface entre 30-100m2) et un Pack Maison (maison sur 2 étages avec surface entre 100 et 200m2) pour mieux répondre à vos besoins. Une large gamme d'accessoires vous sont mis à votre disposition pour personnaliser votre système de sécurité en fonction de vos besoins.</p>
+</div>
+
+<div class="flat-offer" id="apartement">
+  <div class="flat-description">
+    <h2>Découvrez notre Pack Appartement</h2>
+    <h6>Notre pack a été conçu pour des appartements avec une surface de X m2 et une seule porte d'entrée: 1 centrale, 2 détecteurs, 1 sirène, 1 guide d'installation.</h6>
+    <%= link_to root_path, class: "offer-link" do %>
+      <i class="fas fa-caret-right"></i> Commander dans notre e-boutique
+    <% end %>
+  </div>
+</div>
+
+<div class="home-offer" id="home">
+  <div class="home-description">
+    <h2>Découvrez notre Pack Maison</h2>
+    <h6>Notre pack a été conçu pour des maisons avec une surface de X m2 et une seule porte d'entrée: 1 centrale, 4 détecteurs, 1 sirène, 1 guide d'installation.</h6>
+    <%= link_to root_path, class: "offer-link" do %>
+      <i class="fas fa-caret-right"></i> Commander dans notre e-boutique
+    <% end %>
+  </div>
+</div>
 
 <div class="packs-offer">
   <% @packs.each do |p| %>

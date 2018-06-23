@@ -1,0 +1,41 @@
+<div class="protectoris-navbar">
+  <div class="upper-navbar">
+    <div class="contact-navbar"><i class="fa fa-phone"></i>  01.45.43.09.90</div>
+    <div class="contact-navbar">|</div>
+    <div class="contact-navbar"><i class="fa fa-envelope"></i>  info@protectoris.fr</div>
+  </div>
+  <div class="lower-navbar">
+    <%= link_to root_path do %>
+      <%= image_tag "logo-protectoris.png", class: "logo-navbar" %>
+    <% end %>
+    <div class="items-navbar">
+     <%= link_to "NOS PRODUITS", offer_path %>
+     <%= link_to "NOTRE OFFRE", comparison_path %>
+     <%= link_to "NOTRE HISTOIRE", about_path %>
+     <a href="http://www.alarme-camera.fr/118-alarme-protectoris" target="_blank" class="buy-button" id="white">COMMANDER</a>
+    </div>
+  </div>
+
+  <div class="offer-navbar">
+    <div class="offer-icons text-center">
+        <div class="pack-link">
+          <%= link_to offer_path(:anchor => "apartement") do %>
+            <%= image_tag ("apartment-icon.png"), class: "navbar-icon" %>
+            <h6>Pack Appartement</h6>
+          <% end %>
+        </div>
+        <div class="pack-link">
+          <%= link_to anchor: "home" do %>
+            <%= image_tag ("home-icon.png"), class: "navbar-icon" %>
+            <h6>Pack Maison</h6>
+          <% end %>
+        </div>
+        <div class="pack-link">
+          <%= link_to :anchor => "accessories" do %>
+            <%= image_tag ("home-icon.png"), class: "navbar-icon" %>
+            <h6>Accessoires</h6>
+          <% end %>
+        </div>
+    </div>
+  </div>
+</div>

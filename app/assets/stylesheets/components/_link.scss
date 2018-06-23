@@ -29,6 +29,37 @@
   }
 }
 
+.offer-link {
+  display: block;
+  letter-spacing: 1px;
+  padding: 12px 20px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  color: $protectoris-darkblue;
+  width: 350px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 42px;
+    background: $protectoris-darkblue;
+    transition: all 0.7s ease;
+    z-index: -1;
+  }
+  &:hover {
+    text-decoration: none;
+    color: white;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
 
 // button:before {
 //   content:'';

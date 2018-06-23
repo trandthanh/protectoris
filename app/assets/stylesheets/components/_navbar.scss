@@ -87,6 +87,37 @@ i {
   }
 }
 
+// Offer Navbar
+
+.offer-navbar {
+  background-color: $protectoris-blue;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+
+  a {
+    text-decoration: none;
+  }
+  h6 {
+    color: white;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
+}
+
+.offer-icons {
+  display: flex;
+}
+
+.pack-link {
+  padding: 10px;
+  width: 165px;
+}
 
 
 // Mobile
