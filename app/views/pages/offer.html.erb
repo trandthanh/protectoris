@@ -5,6 +5,9 @@
   <% end %>
   <% @products.each do |p| %>
     <p><%= p.name %></p>
+    <% p.product_descriptions.each do |d| %>
+      <%= d.description %> <br>
+    <% end %>
   <% end %>
 </div>
 

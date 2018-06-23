@@ -15,6 +15,8 @@ class PagesController < ApplicationController
   def offer
     @products = Product.all
     @packs = Pack.all
+
+    @product_descriptions = ProductDescription.all
   end
 
 end
