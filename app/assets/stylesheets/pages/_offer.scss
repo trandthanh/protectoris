@@ -4,7 +4,10 @@
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), image-url("offer-banner.jpg");
   background-size: cover;
   background-position: center;
-  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   h3 {
     font-size: 36px;
     font-weight: 400;
@@ -83,3 +86,66 @@
     color: $protectoris-midgray;
   }
 }
+
+// Intermediate
+
+.question-offer {
+  background-color: white;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    width: 60%;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: $protectoris-darkblue;
+  }
+  p {
+    width: 60%;
+  }
+}
+
+
+// Accessories
+
+// .accessories-offer {
+//   background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), image-url("accessories-banner.png");
+//   background-position: right bottom;
+//   background-size: 100%;
+//   background-repeat: no-repeat;
+//   height: 80vh;
+//   width: 100%;
+// }
+
+.detecteur-offer {
+  background-color: white;
+}
+
+.detecteur-offer-banner {
+  background-color: white;
+  height: 120vh;
+}
+
+.detecteur-offer-title {
+  height: 20vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding-bottom: 40px;
+}
+
+#line {
+  width: 100px;
+  margin-top: 15px;
+  border-bottom: 4px solid $protectoris-blue;
+}
+
+.detecteur-offer-footer {
+  background-color: white;
+}
+

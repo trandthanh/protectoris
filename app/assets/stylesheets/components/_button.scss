@@ -18,3 +18,23 @@
     }
   }
 }
+
+.call-to-action-button-no-m {
+  display: inline-block;
+  background-color: $protectoris-blue;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Monda", "Helvetica", "Open Sans";
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  &:hover {
+    border: 2px solid $protectoris-blue;
+    background: white;
+    color: $protectoris-blue;
+    text-decoration: none;
+    &:after {
+      position: relative;
+    }
+  }
+}
