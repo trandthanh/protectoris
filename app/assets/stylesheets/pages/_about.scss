@@ -1,0 +1,39 @@
+.about-wrapper {
+  margin-top: 100px;
+}
+
+.about-image {
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), image-url("about-banner.jpg");
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    width: 80%;
+    font-family: "Roboto";
+  }
+}
+
+.about-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  p {
+    width: 50%;
+  }
+}
+
