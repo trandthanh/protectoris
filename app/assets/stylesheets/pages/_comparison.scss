@@ -1,0 +1,22 @@
+.comparison-wrapper {
+  margin-top: 100px;
+  background-color: $light-gray;
+
+}
+
+.comparison-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  h1 {
+    width: 60%;
+    color: $protectoris-darkblue;
+  }
+  p {
+    margin-top: 30px;
+    width: 70%;
+    font-weight: 300;
+  }
+}

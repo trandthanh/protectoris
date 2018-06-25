@@ -1,0 +1,129 @@
+.comparison-table {
+
+  box-sizing: border-box;
+  padding: 0px;
+  outline: 0;
+
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+
+
+  article {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  ul {
+    display: flex;
+    top: 0;
+    z-index: 10;
+    padding-bottom: 14px;
+  }
+  li {
+    list-style: none;
+    flex: 1;
+  }
+  li:last-child {
+    border-right: 1px solid #DDD;
+  }
+
+  button {
+    width: 100%;
+    border: 1px solid #DDD;
+    border-right: 0;
+    border-top: 0;
+    padding: 10px;
+    background: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    height: 75px;
+    color: #999;
+  }
+
+  li .active button {
+    background: $protectoris-blue;
+    color: white;
+  }
+
+
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+  }
+  th {
+    background: #F5F5F5;
+    display: none;
+  }
+  td, th {
+    height: 53px;
+    border: 1px solid #DDD;
+    padding: 10px;
+    empty-cells: show;
+    text-align: left;
+    background: white;
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  td+th, th+th {
+    text-align: center;
+    display: none;
+  }
+  td.default {
+    display: table-cell;
+  }
+
+  .protectoris-cell {
+    // border-top: 3px solid $protectoris-blue;
+    font-weight: 500;
+    font-size: 15px;
+    background: $protectoris-blue;
+    color: white;
+  }
+  .other-cell {
+    border-top: 3px solid $protectoris-darkblue;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .sep {
+    background: $protectoris-lightgray;
+    font-weight: 500;
+  }
+
+  .txt-l {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .txt-top {
+    position: relative;
+    top: -9px;
+    left: -2px;
+  }
+  .hide {
+    border: 0;
+    background: none;
+  }
+
+  @media (min-width: 640px) {
+    ul {
+      display: none;
+    }
+    td, th {
+      display: table-cell !important;
+    }
+    td, th {
+      width: 330px;
+    }
+    td+th, th+th {
+      width: auto;
+    }
+  }
+
+}
+
