@@ -2,17 +2,35 @@
   <div class="upper-navbar">
     <div class="contact-navbar"><i class="fa fa-phone"></i>  01.45.43.09.90</div>
     <div class="contact-navbar">|</div>
-    <div class="contact-navbar"><i class="fa fa-envelope"></i>  info@protectoris.fr</div>
+    <div class="contact-navbar">
+      <i class="fa fa-envelope"></i>  <a href="mailto:info@protectoris.fr?subject=Demande de renseignements">info@protectoris.fr</a>
+    </div>
   </div>
+  <div class="upper-navbar-mobile">
+    <div class="contact-content">
+      <div class="contact-navbar-phone"><i class="fa fa-phone"></i>  01.45.43.09.90</div>
+      <div class="contact-navbar">|</div>
+      <div class="contact-navbar">
+        <i class="fa fa-envelope"></i>  <a href="mailto:info@protectoris.fr?subject=Demande de renseignements">info@protectoris.fr</a>
+      </div>
+    </div>
+  </div>
+
   <div class="lower-navbar">
     <%= link_to root_path do %>
       <%= image_tag "logo-protectoris.png", class: "logo-navbar" %>
     <% end %>
     <div class="items-navbar">
-     <%= link_to "NOS PRODUITS", offer_path %>
-     <%= link_to "NOTRE OFFRE", comparison_path %>
-     <%= link_to "NOTRE HISTOIRE", about_path %>
+     <%= link_to "NOTRE OFFRE", offer_path %>
+     <%= link_to "COMPARER", comparison_path %>
+     <%= link_to "QUI SOMMES-NOUS ?", about_path %>
      <a href="http://www.alarme-camera.fr/118-alarme-protectoris" target="_blank" class="buy-button" id="white">COMMANDER</a>
     </div>
+  </div>
+  <div class="items-navbar-mobile">
+   <%= link_to "NOTRE OFFRE", offer_path %>
+   <%= link_to "COMPARER", comparison_path %>
+   <%= link_to "QUI SOMMES-NOUS ?", about_path %>
+   <a href="http://www.alarme-camera.fr/118-alarme-protectoris" target="_blank" class="buy-button" id="white">COMMANDER</a>
   </div>
 </div>
