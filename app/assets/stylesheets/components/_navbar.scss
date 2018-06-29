@@ -184,7 +184,7 @@
   }
 
   .contact-navbar-phone {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
 
 
@@ -200,7 +200,7 @@
 
 
   .contact-navbar {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     margin-left: 30px;
 
@@ -237,6 +237,22 @@
 
   .logo-navbar {
     height: 50px;
+  }
+
+  .items-navbar-mobile {
+    background-color: $protectoris-blue;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    a {
+      color: white;
+    }
   }
 
   .buy-button {
@@ -328,5 +344,13 @@
     left: -9999px !important;
     display: none;
   }
+
+  .buy-button {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
 
 }
