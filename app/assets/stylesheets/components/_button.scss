@@ -2,6 +2,7 @@
   display: inline-block;
   background-color: $protectoris-blue;
   border-radius: 20px;
+  border: 2px solid $protectoris-blue;
   padding: 10px 20px;
   font-family: "Monda", "Helvetica", "Open Sans";
   letter-spacing: 1px;
@@ -32,6 +33,28 @@
     border: 2px solid $protectoris-blue;
     background: white;
     color: $protectoris-blue;
+    text-decoration: none;
+    &:after {
+      position: relative;
+    }
+  }
+}
+
+.call-to-action-button-transparent {
+  display: inline-block;
+  background-color: $protectoris-blue;
+  border-radius: 20px;
+  border: 2px solid $protectoris-blue;
+  padding: 10px 20px;
+  font-family: "Monda", "Helvetica", "Open Sans";
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  &:hover {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
     text-decoration: none;
     &:after {
       position: relative;

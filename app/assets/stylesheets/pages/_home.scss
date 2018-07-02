@@ -81,12 +81,14 @@
     width: 35px;
   }
 
+
   // 2. FEATURES
 
   .home-features-wrapper {
     margin: 0;
     padding: 20px;
     padding-top: 80px;
+    padding-bottom: 70px;
     h4 {
       font-size: 24px;
       font-weight: 400;
@@ -100,13 +102,15 @@
     }
   }
 
-  // Pack
+  // 3. PACK INTRO
 
   .pack-wrapper {
-    background-image: image-url("pack-banner.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 130vh;
+    background-color: white;
+    background-image: image-url("home-pack-intro-banner.jpg");
+    background-size: auto;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
 
   .pack-text {
@@ -124,7 +128,7 @@
     }
   }
 
-  // Products
+  // 4. PRODUCTS
 
   .product-wrapper {
     padding-top: 50px;
@@ -132,7 +136,7 @@
   }
 
   .centrale-container {
-    background-image: image-url("centrale-main.png");
+    background-image: image-url("protectoris-centrale-main.png");
     background-size: cover;
     background-position: right;
     height: 100vh;
@@ -156,7 +160,7 @@
   }
 
   .detecteur-container {
-    background-image: image-url("detecteur-banner.png");
+    background-image: image-url("protectoris-detecteurs-main.png");
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -179,10 +183,10 @@
   }
 
   .sirene-container {
-    background-image: image-url("centrale-main.png");
+    background-image: image-url("protectoris-domotique-main.png");
     background-size: cover;
     background-position: right;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     h2 {
@@ -203,10 +207,10 @@
   }
 
   .mobile-container {
-    background-image: image-url("mobile-banner.png");
+    background-image: image-url("protectoris-mobile-banner.png");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 90vh;
     //position: relative;
     display: flex;
     justify-content: flex-end;
@@ -230,22 +234,11 @@
     vertical-align: center;
   }
 
-  // General
 
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    text-align: center;
-    margin: 0 40px;
-    background-color: transparent;
-  }
-
-  // Review
+  // 5. REVIEW
 
   .review-banner {
-    background-image: image-url("review-banner.jpg");
+    background-image: linear-gradient(-225deg, rgba(177, 181, 192, 0.3) 0%, rgba(177, 181, 192,0.2) 50%), image-url("review-banner.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -254,11 +247,20 @@
     align-items: center;
     padding: 0 60px;
 
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
   }
 
   .review-card {
     background-color: white;
-    height: 300px;
+    height: 380px;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -267,25 +269,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 15px;
-    &:after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
-      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
-      content: '';
-      opacity: 0;
-      z-index: -1;
-    }
-    &:hover, &:focus {
-      transform: scale3d(1.01, 1.01, 5);
-      &:after {
-        opacity: 1;
-      }
-    }
+    padding: 15px 15px;
+
     h4 {
       margin-bottom: 10px;
     }
@@ -310,7 +295,7 @@
   // Price
 
   .price-container {
-    height: 100vh;
+    height: 90vh;
     padding-top: 40px;
     h2 {
       font-family: "Roboto";
@@ -331,7 +316,7 @@
     padding: 20px;
     h1 {
       color: white;
-      font-size: 100px;
+      font-size: 80px;
       text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
     h4 {
@@ -343,68 +328,22 @@
       color: white;
       font-size: 15px;
       font-weight: 300;
-      opacity: 0.7;
       font-family: "Roboto";
     }
   }
 
-  // Footer
-
-  .footer {
-    width: 100%;
-    background-color: $protectoris-darkblue;
-    padding: 30px;
+  .apartment-card {
+    background-image: linear-gradient(-225deg, rgba(177, 181, 192, 0.6) 0%, rgba(177, 181, 192,0.7) 50%), image-url("apartment-card.jpg");
+    background-size: cover;
+    background-position: center;
   }
 
-  .upper-footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 80px;
+  .house-card {
+    background-image: linear-gradient(-225deg, rgba(177, 181, 192, 0.6) 0%, rgba(177, 181, 192,0.7) 50%), image-url("house-card.jpg");
+    background-size: cover;
+    background-position: center;
   }
 
-  .footer-company {
-    width: 30%;
-    p {
-      color: $protectoris-lightgray;
-      font-size: 15px;
-      font-weight: 300;
-      padding: 10px;
-      margin-top: 20px;
-    }
-  }
-
-  #logo-footer {
-    width: 200px;
-  }
-
-  .footer-contacts {
-    width: 20%;
-    h4 {
-      color: white;
-    }
-    p {
-      margin-top: 20px;
-      color: $protectoris-lightgray;
-      font-size: 15px;
-      font-weight: 300;
-    }
-    strong {
-      font-weight: 400;
-      color: white;
-    }
-  }
-
-  .lower-footer {
-    padding: 30px 20px 30px 90px;
-  }
-
-  .footer-copyrights {
-    margin-top: 20px;
-    font-size: 12px;
-    color: $protectoris-lightgray;
-    font-weight: 300;
-
-  }
 
 }
 
