@@ -1,23 +1,44 @@
 <div class="offer-banner text-center">
   <h3>Des packs standards afin de faciliter votre choix.</h3>
-  <p>Nous avons pré-conçus un Pack Appartement (surface entre 30-100m2) et un Pack Maison (maison sur 2 étages avec surface entre 100 et 200m2) pour mieux répondre à vos besoins. Une large gamme d'accessoires vous sont mis à votre disposition pour personnaliser votre système de sécurité en fonction de vos besoins.</p>
-  <%= link_to "VOIR NOS PACKS", offer_path(anchor: "apartement"), class: "call-to-action-button"  %>
+  <p>Nous avons pré-conçus 2 Packs Appartement (jusqu'à 2 pièces ou 4 pièces) et 2 Packs Maison (Petite ou Grande) pour mieux répondre à vos besoins. Une large gamme d'accessoires vous sont également mis à votre disposition pour personnaliser votre système de sécurité si nécessaire.</p>
+  <%= link_to "VOIR NOS PACKS", offer_path(anchor: "apartement"), class: "call-to-action-button-transparent"  %>
 </div>
 
-<div class="flat-offer" id="apartement">
+<div class="flat-offer-1" id="apartement">
   <div class="flat-description">
-    <h2>Découvrez notre Pack Appartement</h2>
-    <h6>Notre pack a été conçu pour des appartements avec une surface de X m2 et une seule porte d'entrée: 1 centrale, 2 détecteurs, 1 sirène, 1 guide d'installation.</h6>
+    <h2>Découvrez notre Pack Appartement (jusqu'à 2 pièces)</h2>
+    <h6>Notre pack a été conçu pour des appartements avec au maximum 2 pièces et une seule porte d'entrée: 1 centrale, 1 détecteur de mouvement, 1 détecteur d’ouverture, 2 télécommandes, 2 badges.</h6>
     <%= link_to root_path, class: "offer-link" do %>
       <i class="fas fa-caret-right"></i> Commander dans notre e-boutique
     <% end %>
   </div>
 </div>
 
-<div class="home-offer" id="home">
+<div class="flat-offer-2">
   <div class="home-description">
-    <h2>Découvrez notre Pack Maison</h2>
-    <h6>Notre pack a été conçu pour des maisons avec une surface de X m2 et une seule porte d'entrée: 1 centrale, 4 détecteurs, 1 sirène, 1 guide d'installation.</h6>
+    <h2>Découvrez notre Pack Appartement (jusqu'à 4 pièces)</h2>
+    <h6>Notre pack a été conçu pour des appartements avec au maximum 2pièces et une seule porte d'entrée: 1 centrale, 2 détecteur de mouvement, 3 détecteur d’ouverture, 3 télécommandes, 2 badges.</h6>
+    <%= link_to root_path, class: "offer-link" do %>
+      <i class="fas fa-caret-right"></i> Commander dans notre e-boutique
+    <% end %>
+  </div>
+</div>
+
+<div class="home-offer-1" id="home">
+  <div class="flat-description">
+    <h2>Découvrez notre Pack Maison (Petite Maison)</h2>
+    <h6>Notre pack a été conçu pour des maisons avec une surface de X m2 et une seule porte d'entrée: 1 centrale, 1 détecteur de mouvement, 3 détecteurs d’ouverture, 2 télécommandes, 2 badges, 1 sirène extérieure.</h6>
+    <%= link_to root_path, class: "offer-link" do %>
+      <i class="fas fa-caret-right"></i> Commander dans notre e-boutique
+    <% end %>
+  </div>
+</div>
+
+<div class="home-offer-2">
+  <div class="home-description">
+    <h2>Découvrez notre Pack Maison (Grande Maison)</h2>
+    <h6>Notre pack a été conçu pour des maisons avec une surface de X m2 et une seule porte d'entrée: Pack grande maison :
+    1 centrale, 2 détecteurs de mouvement, 6 détecteurs d’ouverture, 1 détecteur d’inondation, 1 détecteur porte de garage, 4 télécommandes, 4 badges, 1 sirène extérieure.</h6>
     <%= link_to root_path, class: "offer-link" do %>
       <i class="fas fa-caret-right"></i> Commander dans notre e-boutique
     <% end %>
@@ -44,16 +65,16 @@
 
 <div class="detecteur-offer" id="accessories">
   <div class="detecteur-offer-title">
-    <h1>NOS DETECTEURS</h1>
+    <h1>DETECTEURS / INTERIEUR</h1>
     <div id="line"></div>
   </div>
   <div class="detecteur-offer-banner">
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card text-center">
-        <%= image_tag ("122.jpg"), class: "product-image" %>
+        <%= image_tag ("detecteur-ouverture.jpg"), class: "product-image" %>
         <div class="product-card-description">
           <div class="product-card-title">
-            <h3>Détecteur de mouvement</h3>
+            <h3>Détecteur d'ouverture'</h3>
           </div>
         </div>
         <div class="product-card-content">
@@ -74,10 +95,10 @@
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card text-center">
-        <%= image_tag ("131.jpg"), class: "product-image" %>
+        <%= image_tag ("detecteur-mouvement.jpg"), class: "product-image" %>
         <div class="product-card-description">
           <div class="product-card-title">
-            <h3>Détecteur d'ouverture</h3>
+            <h3>Détecteur de mouvement</h3>
           </div>
         </div>
         <div class="product-card-content">
@@ -102,6 +123,92 @@
         <div class="product-card-description">
           <div class="product-card-title">
             <h3>Détecteur d'ouverture et de choc</h3>
+          </div>
+          <div class="product-card-content">
+            <p>
+              Utilisation pour porte et fenêtre <br>
+              Communication sans fil fréquence 869 Mhz <br>
+              Portée radio en champ libre : 300 mètres <br>
+              1 entrée filaire <br>
+              Bouton Panic <br>
+              Température de fonctionnement : -10°C à 50°C <br>
+              Alimentation : 1 pile CR123 <br>
+              Autonomie 24 à 36 mois <br>
+              Dimension (H x L x P) : 99 x 29 x 20 mm (transmetteur), 45 x 12 x 7 mm (aimant), 37 x 37 x 5 mm (capteur de choc) <br>
+              Anti sabotage et supervision par la centrale
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detecteur-offer-footer text-center">
+    <%= link_to "Commander", root_path, class: "call-to-action-button-no-m" %>
+  </div>
+</div>
+
+<!-- Detecteurs Exté -->
+
+<div class="detecteur-offer padding-top-medium padding-bottom-medium">
+  <div class="detecteur-offer-title">
+    <h1>DETECTEURS / EXTERIEUR</h1>
+    <div id="line"></div>
+  </div>
+  <div class="detecteur-offer-banner">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="product-card text-center">
+        <%= image_tag ("detecteur-balcon.jpg"), class: "product-image" %>
+        <div class="product-card-description">
+          <div class="product-card-title">
+            <h3>Détecteur de balcon</h3>
+          </div>
+        </div>
+        <div class="product-card-content">
+          <p>
+              Utilisation pour porte et fenêtre <br>
+              Communication sans fil fréquence 869 Mhz <br>
+              Portée radio en champ libre : 300 mètres <br>
+              1 entrée filaire <br>
+              Bouton Panic <br>
+              Température de fonctionnement : -10°C à 50°C <br>
+              Alimentation : 1 pile CR123 <br>
+              Autonomie 24 à 36 mois <br>
+              Dimension (H x L x P) : 99 x 29 x 20 mm (transmetteur), 45 x 12 x 7 mm (aimant), 37 x 37 x 5 mm (capteur de choc) <br>
+              Anti sabotage et supervision par la centrale
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="product-card text-center">
+        <%= image_tag ("detecteur-barriere.jpg"), class: "product-image" %>
+        <div class="product-card-description">
+          <div class="product-card-title">
+            <h3>Détecteur de barrière</h3>
+          </div>
+        </div>
+        <div class="product-card-content">
+          <p>
+              Utilisation pour porte et fenêtre <br>
+              Communication sans fil fréquence 869 Mhz <br>
+              Portée radio en champ libre : 300 mètres <br>
+              1 entrée filaire <br>
+              Bouton Panic <br>
+              Température de fonctionnement : -10°C à 50°C <br>
+              Alimentation : 1 pile CR123 <br>
+              Autonomie 24 à 36 mois <br>
+              Dimension (H x L x P) : 99 x 29 x 20 mm (transmetteur), 45 x 12 x 7 mm (aimant), 37 x 37 x 5 mm (capteur de choc) <br>
+              Anti sabotage et supervision par la centrale
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="product-card text-center">
+        <%= image_tag ("detecteur-grand-angle.jpg"), class: "product-image" %>
+        <div class="product-card-description">
+          <div class="product-card-title">
+            <h3>Détecteur avec grand angle</h3>
           </div>
           <div class="product-card-content">
             <p>
@@ -128,18 +235,80 @@
 
 <!-- Sirènes -->
 
-<div class="detecteur-offer padding-top-medium padding-bottom-medium" id="accessories">
+<div class="detecteur-offer padding-top-medium padding-bottom-medium">
   <div class="detecteur-offer-title">
-    <h1>NOS SIRENES</h1>
+    <h1>SIRENES</h1>
+    <div id="line"></div>
+  </div>
+  <div class="detecteur-offer-banner">
+    <div class="col-xs-12 col-sm-6">
+      <div class="product-card text-center">
+        <%= image_tag ("sirene-interieur.jpg"), class: "product-image" %>
+        <div class="product-card-description">
+          <div class="product-card-title">
+            <h3>Sirène d'intérieur</h3>
+          </div>
+        </div>
+        <div class="product-card-content">
+          <p>
+              Utilisation pour porte et fenêtre <br>
+              Communication sans fil fréquence 869 Mhz <br>
+              Portée radio en champ libre : 300 mètres <br>
+              1 entrée filaire <br>
+              Bouton Panic <br>
+              Température de fonctionnement : -10°C à 50°C <br>
+              Alimentation : 1 pile CR123 <br>
+              Autonomie 24 à 36 mois <br>
+              Dimension (H x L x P) : 99 x 29 x 20 mm (transmetteur), 45 x 12 x 7 mm (aimant), 37 x 37 x 5 mm (capteur de choc) <br>
+              Anti sabotage et supervision par la centrale
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="product-card text-center">
+        <%= image_tag ("sirene-exterieur.jpg"), class: "product-image" %>
+        <div class="product-card-description">
+          <div class="product-card-title">
+            <h3>Sirène d'extérieur</h3>
+          </div>
+        </div>
+        <div class="product-card-content">
+          <p>
+              Utilisation pour porte et fenêtre <br>
+              Communication sans fil fréquence 869 Mhz <br>
+              Portée radio en champ libre : 300 mètres <br>
+              1 entrée filaire <br>
+              Bouton Panic <br>
+              Température de fonctionnement : -10°C à 50°C <br>
+              Alimentation : 1 pile CR123 <br>
+              Autonomie 24 à 36 mois <br>
+              Dimension (H x L x P) : 99 x 29 x 20 mm (transmetteur), 45 x 12 x 7 mm (aimant), 37 x 37 x 5 mm (capteur de choc) <br>
+              Anti sabotage et supervision par la centrale
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detecteur-offer-footer text-center">
+    <%= link_to "Commander", root_path, class: "call-to-action-button-no-m" %>
+  </div>
+</div>
+
+<!-- COMMANDES -->
+
+<div class="detecteur-offer padding-top-medium padding-bottom-medium">
+  <div class="detecteur-offer-title">
+    <h1>COMMANDES</h1>
     <div id="line"></div>
   </div>
   <div class="detecteur-offer-banner">
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card text-center">
-        <%= image_tag ("122.jpg"), class: "product-image" %>
+        <%= image_tag ("clavier.png"), class: "product-image" %>
         <div class="product-card-description">
           <div class="product-card-title">
-            <h3>Détecteur de mouvement</h3>
+            <h3>Clavier</h3>
           </div>
         </div>
         <div class="product-card-content">
@@ -160,10 +329,10 @@
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card text-center">
-        <%= image_tag ("131.jpg"), class: "product-image" %>
+        <%= image_tag ("telecommande.jpg"), class: "product-image" %>
         <div class="product-card-description">
           <div class="product-card-title">
-            <h3>Détecteur d'ouverture</h3>
+            <h3>Télécommande</h3>
           </div>
         </div>
         <div class="product-card-content">
@@ -184,10 +353,10 @@
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card text-center">
-        <%= image_tag ("134.jpg"), class: "product-image" %>
+        <%= image_tag ("telecommande.jpg"), class: "product-image" %>
         <div class="product-card-description">
           <div class="product-card-title">
-            <h3>Détecteur d'ouverture et de choc</h3>
+            <h3>Badge</h3>
           </div>
           <div class="product-card-content">
             <p>
@@ -211,5 +380,4 @@
     <%= link_to "Commander", root_path, class: "call-to-action-button-no-m" %>
   </div>
 </div>
-
 
