@@ -10,15 +10,16 @@
     <% end %>
     <div class="items-navbar">
      <%= link_to "NOS PRODUITS", offer_path %>
-     <%= link_to "NOTRE OFFRE", comparison_path %>
-     <%= link_to "NOTRE HISTOIRE", about_path %>
+     <%= link_to "COMPARER", comparison_path %>
+     <%= link_to "QUI SOMMES-NOUS ?", about_path %>
      <a href="http://www.alarme-camera.fr/118-alarme-protectoris" target="_blank" class="buy-button" id="white">COMMANDER</a>
     </div>
   </div>
+</div>
 
-  <div class="offer-navbar">
+<div class="offer-navbar">
     <div class="offer-icons text-center">
-        <div class="pack-link">
+        <div class="pack-link" id="pack-appart">
           <%= link_to offer_path(:anchor => "apartement") do %>
             <%= image_tag ("apartment-icon.png"), class: "navbar-icon" %>
             <h6>Pack Appartement</h6>
@@ -38,4 +39,3 @@
         </div>
     </div>
   </div>
-</div>
