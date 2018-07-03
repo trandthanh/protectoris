@@ -10,7 +10,7 @@ function table() {
   });
 
   // Initialize the media query
-  var mediaQuery = window.matchMedia('(min-width: 640px)');
+  var mediaQuery = window.matchMedia('(min-width: 1023px)');
 
   // Add a listen event
   mediaQuery.addListener(doSomething);
