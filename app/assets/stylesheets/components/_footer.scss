@@ -1,4 +1,4 @@
-// Footer
+@media only screen and (min-width: 1024px) {
 
   .footer {
     width: 100%;
@@ -55,3 +55,74 @@
     font-weight: 300;
 
   }
+
+}
+
+
+
+
+// MOBILE
+
+@media only screen and (max-width: 1023px) {
+
+  .footer {
+    width: 100%;
+    background-color: $protectoris-darkblue;
+    padding-top: 30px;
+  }
+
+  .upper-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-company {
+    text-align: center;
+    p {
+      color: $protectoris-lightgray;
+      font-size: 15px;
+      font-weight: 300;
+      margin-top: 20px;
+      padding-left: 10px;
+      padding-right: 20px;
+    }
+  }
+
+  #logo-footer {
+    width: 200px;
+  }
+
+  .footer-contacts {
+    text-align: center;
+    h4 {
+      color: white;
+    }
+    p {
+      margin-top: 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: 300;
+
+    }
+    strong {
+      font-weight: 400;
+      color: white;
+    }
+  }
+
+  .lower-footer {
+    padding-bottom: 20px;
+  }
+
+  .footer-copyrights {
+    margin-top: 20px;
+    font-size: 12px;
+    color: $protectoris-lightgray;
+    font-weight: 300;
+    text-align: center;
+  }
+
+}
+

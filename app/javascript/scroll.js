@@ -1,5 +1,4 @@
 function scroll() {
-
   const element = document.getElementById('click-item');
   const el = document.querySelector('.home-features-wrapper');
 

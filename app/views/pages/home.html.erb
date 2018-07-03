@@ -4,13 +4,20 @@
   <div class="home-banner-rectangle">
     <div class="home-banner-text">
       <h3>Protectoris, l'alarme sans fil à installer soi-même</h3>
-      <p>Conçu en France par une équipe d'experts en matériel de sécurité depuis 1992, Protectoris est le meilleur système d'alarme alliant Qualité, Prix et Performance. Découvrez notre nouvelle gamme.</p>
+      <p>Conçu en France par une équipe d'experts en matériel de sécurité depuis 1992, Protectoris est le meilleur système d'alarme alliant Qualité, Prix et Performance.</p>
     </div>
   </div>
   <div class="home-banner-scroll">
-    <h6>En savoir plus</h6>
+    <h6>Découvrez notre nouvelle gamme</h6>
     <%= image_tag ("arrow-down-icon.png"), class: "scroll-icon", id: "click-item" %>
   </div>
+</div>
+
+<!-- 1(bis). Mobile Banner -->
+
+<div class="home-banner-scroll-mobile">
+  <h6>Découvrez notre nouvelle gamme</h6>
+  <%= image_tag ("arrow-down-icon-darkblue.png"), class: "scroll-icon", id: "click-item" %>
 </div>
 
 <!-- 2. Features -->
@@ -18,7 +25,7 @@
 <div class="home-features-wrapper scroll-anchor">
   <div class="container">
 
-    <div class="col-xs-6 col-md-4">
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="home-feature text-center">
         <div class="feature-icon">
           <%= image_tag ("icon-installation.png"), class: "medium-icon" %>
@@ -31,7 +38,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-6 col-md-4">
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="home-feature text-center">
         <div class="feature-icon">
           <%= image_tag ("icon-detection.png"), class: "medium-icon" %>
@@ -44,7 +51,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-6 col-md-4">
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="home-feature text-center">
         <div class="feature-icon">
           <%= image_tag ("icon-network.png"), class: "medium-icon" %>
@@ -58,9 +65,7 @@
       </div>
     </div>
 
-
-
-    <div class="col-xs-6 col-md-4">
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="home-feature text-center">
         <div class="feature-icon">
           <%= image_tag ("icon-privacy.png"), class: "medium-icon" %>
@@ -73,7 +78,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-6 col-md-4">
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="home-feature text-center">
         <div class="feature-icon">
           <%= image_tag ("icon-commandes.png"), class: "medium-icon" %>
@@ -86,7 +91,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-6 col-md-4">
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="home-feature text-center">
         <div class="feature-icon">
           <%= image_tag ("icon-security.png"), class: "medium-icon" %>
@@ -114,6 +119,19 @@
   </div>
 </div>
 
+<div class="pack-mobile">
+
+  <div class="pack-text-mobile text-center">
+    <h2>DE QUOI SE COMPOSENT NOS PACKS ?</h2>
+    <div class="pack-wrapper-mobile text-center">
+    </div>
+    <p>Nos packs ont été préconçus en fonction de vos retours: Pack Appartement, Pack Maison. Aucun de ces packs ne vous convient ? Aucun problème ! Nos packs sont entièrement personnalisables. </p>
+    <p>L'équipe Protectoris reste à votre service et à votre écoute. Notre personnel technique basé à Paris vous assistera gratuitement par téléphone. Notre matériel est garanti 2 ans. </p>
+    <%= link_to "VOIR NOS PACKS", offer_path, class: "call-to-action-button-mobile"  %>
+  </div>
+</div>
+
+
 <!-- 4. Produit -->
 
 <div class="product-wrapper">
@@ -130,6 +148,23 @@
     </div>
   </div>
 
+  <div class="mobile">
+    <div class="centrale-text-mobile">
+        <h2>UNE CENTRALE COMPACTE</h2>
+      </div>
+    <div class="centrale-container-mobile">
+    </div>
+    <p>Le lecteur de badge intégré rend l’utilisation du système simple pour les enfants et les personne âgées. Le clavier tactile permet la mise en marche ou l'arret de l’alarme avec un code secret. L'affichage de l'écran en couleur avec son menu simplifié facilite le paramétrage de l'appareil. Une sirène 108dB, un support pour carte SIM et une antenne Wifi y sont également intégrés.</p>
+    <div class="centrale-link-mobile">
+      <%= link_to root_path, class: "voir-plus-link-mobile" do %>
+        <i class="fas fa-caret-right"></i> Spécificités techniques
+      <% end %>
+      <%= link_to root_path, class: "voir-plus-link-mobile" do %>
+        <i class="fas fa-caret-right"></i> Paramétrage facile
+      <% end %>
+    </div>
+  </div>
+
   <div class="detecteur-container">
     <div class="detecteur-text">
       <h2>UN LARGE CHOIX DE DETECTEURS</h2>
@@ -139,6 +174,22 @@
       <% end %>
     </div>
   </div>
+
+  <div class="mobile">
+    <div class="centrale-text-mobile text-center">
+        <h2>UN LARGE CHOIX DE DETECTEURS</h2>
+    </div>
+    <div class="detecteur-container-mobile">
+    </div>
+    <p>Des détecteurs à microprocesseurs pour l’extérieur complètent la gamme des détecteurs d’intrusion pour l’intérieur.</p>
+    <div class="centrale-link-mobile">
+      <%= link_to root_path, class: "voir-plus-link-mobile" do %>
+        <i class="fas fa-caret-right"></i> Nos détecteurs
+      <% end %>
+    </div>
+  </div>
+
+
 
   <div class="sirene-container">
     <div class="sirene-text">
@@ -150,6 +201,20 @@
     </div>
   </div>
 
+  <div class="mobile">
+    <div class="centrale-text-mobile text-center">
+      <h2>LA DOMOTIQUE SIMPLE</h2>
+    </div>
+    <div class="domotique-container-mobile"></div>
+    <p>Nous vous proposons un récepteur 220V sans fil pilotable et programmable en plage horaire, déclencheur de scénario pour Somfy-Tahoma et commande de fermeture de volets pour Somfy RTS, IO et Bubendorff.</p>
+    <div class="centrale-link-mobile">
+      <%= link_to root_path, class: "voir-plus-link-mobile" do %>
+        <i class="fas fa-caret-right"></i> En savoir plus
+      <% end %>
+    </div>
+  </div>
+
+
   <div class="mobile-container">
     <div class="mobile-text">
       <h2>TOUJOURS DANS VOTRE POCHE</h2>
@@ -160,10 +225,28 @@
     </div>
   </div>
 
+  <div class="mobile">
+    <div class="centrale-text-mobile text-center">
+      <h2>TOUJOURS DANS VOTRE POCHE</h2>
+    </div>
+    <div class="mobile-container-mobile"></div>
+    <p>Votre système est contrôlable via l'application mobile. De plus, grâce aux SMS et notifications push selon votre paramétrage, Protectoris vous alerte à la moindre anomalie.</p>
+    <div class="centrale-link-mobile">
+      <%= link_to root_path, class: "voir-plus-link-mobile" do %>
+        <i class="fas fa-caret-right"></i> Utilisation simple
+      <% end %>
+    </div>
+  </div>
+
   <div class="review-banner">
-    <div class="col-sm-12 col-md-4">
+    <div class="container">
+
+
+
+    <div class="col-xs-12 col-sm-12 col-md-4">
+      <div class="review-card text-center">
       <a href="https://www.google.com/search?source=hp&ei=zAM6W96UNYn-UM7shdgP&q=ts3v&oq=ts3v&gs_l=psy-ab.3..0l10.463.1181.0.1268.5.4.0.0.0.0.113.274.2j1.3.0....0...1.1.64.psy-ab..2.3.274.0...0.Zbgb5KCGWuQ#lrd=0x47e671ae7dc881d3:0xf4b472ced63eaf5,1,,,">
-        <div class="review-card text-center">
+
           <%= image_tag ("ben-avatar.png"), class: "review-avatar" %>
           <h4>Jean-Michel I.</h4>
           <h6>02-01-2018</h6>
@@ -174,9 +257,10 @@
     </div>
 
 
-    <div class="col-sm-12 col-md-4">
+    <div class="col-xs-12 col-sm-12 col-md-4">
+      <div class="review-card text-center">
       <a href="https://www.pagesjaunes.fr/utilisateur/profil-public/fknV5fl6IMA=">
-        <div class="review-card text-center">
+
           <%= image_tag ("man-avatar.png"), class: "review-avatar" %>
           <h4>PJ8IiRUW</h4>
           <h6>17-10-2015</h6>
@@ -187,7 +271,7 @@
     </div>
 
 
-    <div class="col-sm-12 col-md-4">
+    <div class="col-xs-12 col-sm-12 col-md-4">
       <div class="review-card text-center">
         <%= image_tag ("ben-avatar.png"), class: "review-avatar" %>
         <h4>Jean-Michel I.</h4>
@@ -198,11 +282,14 @@
     </div>
   </div>
 
+  </div>
+
   <div class="price-container text-center">
     <h2>NOS PRIX</h2>
     <p>Nos packs standards sont personnalisables. Contactez-nous pour que nous puissions vous aider quand à la personnalisation de votre système.</p>
-    <div class="row">
-      <div class="col-xs-4 col-xs-offset-2">
+
+    <div class="container">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-2">
         <div class="price-card apartment-card">
           <h4>Packs Appartement</h4>
           <h1>299€</h1>
@@ -212,7 +299,7 @@
         <%= link_to "COMMANDER", root_path, class: "call-to-action-button-transparent"  %>
         </div>
       </div>
-      <div class="col-xs-4 col-offset-xs-2">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-2">
         <div class="price-card house-card">
           <h4>Packs Maison</h4>
           <h1>499€</h1>
@@ -223,6 +310,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </div>
 

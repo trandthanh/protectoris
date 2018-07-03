@@ -1,64 +1,128 @@
-.call-to-action-button {
-  display: inline-block;
-  background-color: $protectoris-blue;
-  border-radius: 20px;
-  border: 2px solid $protectoris-blue;
-  padding: 10px 20px;
-  font-family: "Monda", "Helvetica", "Open Sans";
-  letter-spacing: 1px;
-  text-align: center;
-  color: white;
-  margin-top: 30px;
-  &:hover {
-    border: 2px solid $protectoris-blue;
-    background: white;
-    color: $protectoris-blue;
-    text-decoration: none;
-    &:after {
-      position: relative;
-    }
-  }
-}
+@media only screen and (min-width: 1024px) {
 
-.call-to-action-button-no-m {
-  display: inline-block;
-  background-color: $protectoris-blue;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-family: "Monda", "Helvetica", "Open Sans";
-  letter-spacing: 1px;
-  text-align: center;
-  color: white;
-  border: 2px solid $protectoris-blue;
-  &:hover {
+  .call-to-action-button {
+    display: inline-block;
+    background-color: $protectoris-blue;
+    border-radius: 20px;
     border: 2px solid $protectoris-blue;
-    background: white;
-    color: $protectoris-blue;
-    text-decoration: none;
-    &:after {
-      position: relative;
-    }
-  }
-}
-
-.call-to-action-button-transparent {
-  display: inline-block;
-  background-color: $protectoris-blue;
-  border-radius: 20px;
-  border: 2px solid $protectoris-blue;
-  padding: 10px 20px;
-  font-family: "Monda", "Helvetica", "Open Sans";
-  letter-spacing: 1px;
-  text-align: center;
-  color: white;
-  margin-top: 30px;
-  &:hover {
-    border: 2px solid white;
-    background: transparent;
+    padding: 10px 20px;
+    font-family: "Monda", "Helvetica", "Open Sans";
+    letter-spacing: 1px;
+    text-align: center;
     color: white;
-    text-decoration: none;
-    &:after {
-      position: relative;
+    margin-top: 30px;
+    &:hover {
+      border: 2px solid $protectoris-blue;
+      background: white;
+      color: $protectoris-blue;
+      text-decoration: none;
+      &:after {
+        position: relative;
+      }
     }
   }
+
+  .call-to-action-button-no-m {
+    display: inline-block;
+    background-color: $protectoris-blue;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: "Monda", "Helvetica", "Open Sans";
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    border: 2px solid $protectoris-blue;
+    &:hover {
+      border: 2px solid $protectoris-blue;
+      background: white;
+      color: $protectoris-blue;
+      text-decoration: none;
+      &:after {
+        position: relative;
+      }
+    }
+  }
+
+  .call-to-action-button-transparent {
+    display: inline-block;
+    background-color: $protectoris-blue;
+    border-radius: 20px;
+    border: 2px solid $protectoris-blue;
+    padding: 10px 20px;
+    font-family: "Monda", "Helvetica", "Open Sans";
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    &:hover {
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      text-decoration: none;
+      &:after {
+        position: relative;
+      }
+    }
+  }
+
 }
+
+
+
+
+// MOBILE
+
+@media only screen and (max-width: 1023px) {
+
+  .call-to-action-button-mobile {
+    display: inline-block;
+    background-color: $protectoris-blue;
+    border-radius: 20px;
+    border: 2px solid $protectoris-blue;
+    padding: 10px 20px;
+    font-family: "Monda", "Helvetica", "Open Sans";
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  .call-to-action-button-transparent {
+    display: inline-block;
+    background-color: $protectoris-blue;
+    border-radius: 20px;
+    border: 2px solid $protectoris-blue;
+    padding: 10px 20px;
+    font-family: "Monda", "Helvetica", "Open Sans";
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    &:hover {
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      text-decoration: none;
+      &:after {
+        position: relative;
+      }
+    }
+  }
+
+  // DESKTOP CLASSES REMOVED
+
+  .call-to-action-button {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
+
+
+}
+
