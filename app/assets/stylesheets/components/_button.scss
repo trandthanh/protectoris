@@ -74,6 +74,27 @@
 
 @media only screen and (max-width: 1023px) {
 
+  .call-to-action-button-no-m {
+    display: inline-block;
+    background-color: $protectoris-blue;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: "Monda", "Helvetica", "Open Sans";
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    border: 2px solid $protectoris-blue;
+    &:hover {
+      border: 2px solid $protectoris-blue;
+      background: white;
+      color: $protectoris-blue;
+      text-decoration: none;
+      &:after {
+        position: relative;
+      }
+    }
+  }
+
   .call-to-action-button-mobile {
     display: inline-block;
     background-color: $protectoris-blue;
@@ -110,6 +131,22 @@
       &:after {
         position: relative;
       }
+    }
+  }
+
+  .buy-mobile {
+    display: inline-block;
+    background-color: $protectoris-blue;
+    border-radius: 20px;
+    border: 2px solid $protectoris-blue;
+    padding: 10px 10px;
+    font-family: "Monda", "Helvetica", "Open Sans";
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    &:active {
+      text-decoration: none;
     }
   }
 

@@ -14,12 +14,42 @@
   </div>
 </div>
 
+<div class="mobile-offer">
+  <div class="flat-description-mobile">
+    <h2>Découvrez notre Pack Appartement (jusqu'à 2 pièces)</h2>
+  </div>
+  <div class="flat-offer-1-mobile"></div>
+  <div class="flat-description-mobile">
+    <h6>Notre pack a été conçu pour des appartements avec au maximum 2 pièces et une seule porte d'entrée: 1 centrale, 1 détecteur de mouvement, 1 détecteur d’ouverture, 2 télécommandes, 2 badges.</h6>
+  </div>
+  <div class="call-to-action text-center">
+    <%= link_to root_path, class: "buy-mobile" do %>
+      COMMANDER
+    <% end %>
+  </div>
+</div>
+
 <div class="flat-offer-2">
   <div class="home-description">
     <h2>Découvrez notre Pack Appartement (jusqu'à 4 pièces)</h2>
-    <h6>Notre pack a été conçu pour des appartements avec au maximum 2pièces et une seule porte d'entrée: 1 centrale, 2 détecteur de mouvement, 3 détecteur d’ouverture, 3 télécommandes, 2 badges.</h6>
+    <h6>Notre pack a été conçu pour des appartements avec au maximum 4 pièces et une seule porte d'entrée: 1 centrale, 2 détecteur de mouvement, 3 détecteur d’ouverture, 3 télécommandes, 2 badges.</h6>
     <%= link_to root_path, class: "offer-link" do %>
       <i class="fas fa-caret-right"></i> Commander dans notre e-boutique
+    <% end %>
+  </div>
+</div>
+
+<div class="mobile-offer">
+  <div class="flat-description-mobile">
+    <h2>Découvrez notre Pack Appartement (jusqu'à 4 pièces)</h2>
+  </div>
+  <div class="flat-offer-2-mobile"></div>
+  <div class="flat-description-mobile">
+    <h6>Notre pack a été conçu pour des appartements avec au maximum 4 pièces et une seule porte d'entrée: 1 centrale, 2 détecteur de mouvement, 3 détecteur d’ouverture, 3 télécommandes, 2 badges.</h6>
+  </div>
+  <div class="call-to-action text-center">
+    <%= link_to root_path, class: "buy-mobile" do %>
+      COMMANDER
     <% end %>
   </div>
 </div>
@@ -34,6 +64,21 @@
   </div>
 </div>
 
+<div class="mobile-offer">
+  <div class="flat-description-mobile">
+    <h2>Découvrez notre Pack Maison (Petite Maison)</h2>
+  </div>
+  <div class="home-offer-1-mobile"></div>
+  <div class="flat-description-mobile">
+    <h6>Notre pack a été conçu pour des maisons avec une surface de X m2 et une seule porte d'entrée: 1 centrale, 1 détecteur de mouvement, 3 détecteurs d’ouverture, 2 télécommandes, 2 badges, 1 sirène extérieure.</h6>
+  </div>
+  <div class="call-to-action text-center">
+    <%= link_to root_path, class: "buy-mobile" do %>
+      COMMANDER
+    <% end %>
+  </div>
+</div>
+
 <div class="home-offer-2">
   <div class="home-description">
     <h2>Découvrez notre Pack Maison (Grande Maison)</h2>
@@ -44,6 +89,23 @@
     <% end %>
   </div>
 </div>
+
+<div class="mobile-offer pad-bot">
+  <div class="flat-description-mobile">
+    <h2>Découvrez notre Pack Maison (Grande Maison)</h2>
+  </div>
+  <div class="home-offer-2-mobile"></div>
+  <div class="flat-description-mobile">
+    <h6>Notre pack a été conçu pour des maisons avec une surface de X m2 et une seule porte d'entrée: Pack grande maison :
+    1 centrale, 2 détecteurs de mouvement, 6 détecteurs d’ouverture, 1 détecteur d’inondation, 1 détecteur porte de garage, 4 télécommandes, 4 badges, 1 sirène extérieure.</h6>
+  </div>
+  <div class="call-to-action text-center">
+    <%= link_to root_path, class: "buy-mobile" do %>
+      COMMANDER
+    <% end %>
+  </div>
+</div>
+
 
 <!-- <div class="packs-offer">
   <#% @packs.each do |p| %>
@@ -74,7 +136,7 @@
         <%= image_tag ("detecteur-ouverture.jpg"), class: "product-image" %>
         <div class="product-card-description">
           <div class="product-card-title">
-            <h3>Détecteur d'ouverture'</h3>
+            <h3>Détecteur d'ouverture</h3>
           </div>
         </div>
         <div class="product-card-content">
@@ -119,7 +181,7 @@
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card text-center">
-        <%= image_tag ("134.jpg"), class: "product-image" %>
+        <%= image_tag ("detecteur-mouvement.jpg"), class: "product-image" %>
         <div class="product-card-description">
           <div class="product-card-title">
             <h3>Détecteur d'ouverture et de choc</h3>
@@ -149,7 +211,7 @@
 
 <!-- Detecteurs Exté -->
 
-<div class="detecteur-offer padding-top-medium padding-bottom-medium">
+<div class="detecteur-offer padding-top-small">
   <div class="detecteur-offer-title">
     <h1>DETECTEURS / EXTERIEUR</h1>
     <div id="line"></div>
@@ -157,7 +219,7 @@
   <div class="detecteur-offer-banner">
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card text-center">
-        <%= image_tag ("detecteur-balcon.jpg"), class: "product-image" %>
+        <%= image_tag ("detecteur-balcon.jpg"), class: "product-image margin-image" %>
         <div class="product-card-description">
           <div class="product-card-title">
             <h3>Détecteur de balcon</h3>
@@ -181,7 +243,7 @@
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card text-center">
-        <%= image_tag ("detecteur-barriere.jpg"), class: "product-image" %>
+        <%= image_tag ("detecteur-barriere.jpg"), class: "product-image margin-image" %>
         <div class="product-card-description">
           <div class="product-card-title">
             <h3>Détecteur de barrière</h3>
@@ -205,7 +267,7 @@
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card text-center">
-        <%= image_tag ("detecteur-grand-angle.jpg"), class: "product-image" %>
+        <%= image_tag ("detecteur-grand-angle.jpg"), class: "product-image margin-image" %>
         <div class="product-card-description">
           <div class="product-card-title">
             <h3>Détecteur avec grand angle</h3>
@@ -235,7 +297,7 @@
 
 <!-- Sirènes -->
 
-<div class="detecteur-offer padding-top-medium padding-bottom-medium">
+<div class="detecteur-offer padding-top-small">
   <div class="detecteur-offer-title">
     <h1>SIRENES</h1>
     <div id="line"></div>
@@ -297,7 +359,7 @@
 
 <!-- COMMANDES -->
 
-<div class="detecteur-offer padding-top-medium padding-bottom-medium">
+<div class="detecteur-offer padding-top-small pad-bot">
   <div class="detecteur-offer-title">
     <h1>COMMANDES</h1>
     <div id="line"></div>

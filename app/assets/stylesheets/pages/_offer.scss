@@ -1,3 +1,5 @@
+@media only screen and (min-width: 1024px) {
+
 .offer-banner {
   margin-top: 215px;
   height: 70vh;
@@ -166,5 +168,245 @@
 
 .detecteur-offer-footer {
   background-color: white;
+}
+
+  // MOBILE CLASSES REMOVED
+
+  .mobile-offer {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
+}
+
+
+
+
+// MOBILE
+
+@media only screen and (max-width: 1023px) {
+
+  .offer-banner {
+    height: 70vh;
+    background-image: linear-gradient(-225deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.7) 50%), image-url("offer-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 255px;
+    h3 {
+      font-size: 25px;
+      font-weight: 400;
+      font-family: "Roboto";
+      color: white;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      color: white;
+      width: 70%;
+      display: inline-block;
+    }
+  }
+
+  .packs-offer {
+    margin-top: 100px;
+    height: 100vh;
+    color: $protectoris-darkblue;
+    p {
+      z-index: 1;
+    }
+  }
+
+  // Packs
+
+  .mobile-offer {
+    background-color: white;
+  }
+
+  .flat-offer-1-mobile {
+    background-image: image-url("pack-appartement-1-mobile.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+  }
+
+  .flat-description-mobile {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 25px;
+      font-weight: 500;
+      font-family: "Roboto";
+      color: $protectoris-darkblue;
+      margin: 0;
+      text-align: center;
+      margin-top: 30px;
+    }
+    h6 {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 300;
+      color: $protectoris-midgray;
+      font-family: "Roboto";
+      margin: 10px;
+    }
+  }
+
+  .flat-offer-2-mobile {
+    background-image: image-url("pack-appartement-2-mobile.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+  }
+
+  .flat-description {
+    margin-right: 40px;
+    width: 30%;
+    h2 {
+      font-family: "Roboto";
+      margin-bottom: 40px;
+      color: $protectoris-darkblue;
+    }
+    h6 {
+      font-family: "Roboto";
+      font-weight: 300;
+      color: $protectoris-midgray;
+    }
+  }
+
+  .home-offer-1-mobile {
+    background-image: image-url("pack-maison-1-mobile.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+  }
+
+  .home-offer-2-mobile {
+    background-image: image-url("pack-maison-2-mobile.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+  }
+
+  .home-description {
+    margin-left: 70px;
+    width: 30%;
+    h2 {
+      font-family: "Roboto";
+      margin-bottom: 40px;
+      color: $protectoris-darkblue;
+    }
+    h6 {
+      font-family: "Roboto";
+      font-weight: 300;
+      color: $protectoris-midgray;
+    }
+  }
+
+  .pad-bot {
+    padding-bottom: 30px;
+  }
+
+  // Intermediate
+
+  .question-offer {
+    background-color: $light-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    h2 {
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-family: "Roboto";
+      color: $protectoris-darkblue;
+      font-size: 25px;
+    }
+    p {
+      font-size: 16px;
+      font-family: "Roboto";
+      font-weight: 400;
+      color: $protectoris-midgray;
+    }
+  }
+
+
+  // Accessories
+
+  .detecteur-offer {
+    background-color: white;
+  }
+
+  .detecteur-offer-banner {
+    background-color: white;
+  }
+
+  .detecteur-offer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  #line {
+    width: 100px;
+    margin-top: 15px;
+    border-bottom: 4px solid $protectoris-blue;
+  }
+
+  .detecteur-offer-footer {
+    background-color: white;
+  }
+
+  // DESKTOP CLASS REMOVED
+
+  .flat-offer-1 {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
+  .flat-offer-2 {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
+  .home-offer-1 {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
+  .home-offer-2 {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
 }
 

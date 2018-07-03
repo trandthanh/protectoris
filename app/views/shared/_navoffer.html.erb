@@ -6,6 +6,16 @@
       <i class="fa fa-envelope"></i>  <a href="mailto:info@protectoris.fr?subject=Demande de renseignements">info@protectoris.fr</a>
     </div>
   </div>
+  <div class="upper-navbar-mobile">
+    <div class="contact-content">
+      <div class="contact-navbar-phone"><i class="fa fa-phone"></i>  01.45.43.09.90</div>
+      <div class="contact-navbar">|</div>
+      <div class="contact-navbar">
+        <i class="fa fa-envelope"></i>  <a href="mailto:info@protectoris.fr?subject=Demande de renseignements">info@protectoris.fr</a>
+      </div>
+    </div>
+  </div>
+
   <div class="lower-navbar">
     <%= link_to root_path do %>
       <%= image_tag "logo-protectoris.png", class: "logo-navbar" %>
@@ -17,6 +27,12 @@
      <a href="http://www.alarme-camera.fr/118-alarme-protectoris" target="_blank" class="buy-button" id="white">COMMANDER</a>
     </div>
   </div>
+  <div class="items-navbar-mobile">
+   <%= link_to "NOS PRODUITS", offer_path %>
+   <%= link_to "COMPARER", comparison_path %>
+   <%= link_to "QUI SOMMES-NOUS ?", about_path %>
+   <a href="http://www.alarme-camera.fr/118-alarme-protectoris" target="_blank" class="buy-button" id="white">COMMANDER</a>
+  </div>
 </div>
 
 <div class="offer-navbar">
@@ -24,13 +40,13 @@
         <div class="pack-link" id="pack-appart">
           <%= link_to offer_path(:anchor => "apartement") do %>
             <%= image_tag ("apartment-icon.png"), class: "navbar-icon" %>
-            <h6>Pack Appartement</h6>
+            <h6>Packs Appartement</h6>
           <% end %>
         </div>
         <div class="pack-link">
           <%= link_to anchor: "home" do %>
             <%= image_tag ("home-icon.png"), class: "navbar-icon" %>
-            <h6>Pack Maison</h6>
+            <h6>Packs<br>Maison</h6>
           <% end %>
         </div>
         <div class="pack-link">
