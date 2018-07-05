@@ -56,6 +56,13 @@
 
   }
 
+  a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
 }
 
 
@@ -122,6 +129,13 @@
     color: $protectoris-lightgray;
     font-weight: 300;
     text-align: center;
+  }
+
+  a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
 }
