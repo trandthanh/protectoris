@@ -38,10 +38,12 @@
 // Packs
 
 .flat-offer-1 {
-  background-image: image-url("pack-appartement-1.png");
-  background-size: cover;
+  background-image: image-url("test-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: left;
-  height: 100vh;
+  background-color: white;
+  height: 80vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
