@@ -37,6 +37,7 @@
     flex-direction: column;
   }
 
+
 }
 
 
@@ -86,6 +87,17 @@
     display: flex;
     align-content: center;
     justify-content: center;
+  }
+
+  .comparison-table {
+    h6 {
+      font-family: "Roboto";
+      font-size: 13px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      text-align: center;
+      color: $protectoris-darkblue;
+    }
   }
 
 }

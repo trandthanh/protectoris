@@ -1,5 +1,9 @@
 @media only screen and (min-width: 1024px) {
 
+  .pad-bot {
+    padding-bottom: 30px;
+  }
+
 .offer-banner {
   margin-top: 215px;
   height: 70vh;
@@ -149,7 +153,6 @@
 
 .detecteur-offer-banner {
   background-color: white;
-  height: 120vh;
 }
 
 .detecteur-offer-title {
@@ -318,7 +321,7 @@
   }
 
   .pad-bot {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   // Intermediate
