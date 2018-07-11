@@ -53,15 +53,7 @@
   align-items: center;
 }
 
-.flat-offer-2 {
-  background-image: image-url("pack-appartement-2.png");
-  background-size: cover;
-  background-position: left;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+
 
 .flat-description {
   margin-right: 40px;
@@ -113,6 +105,128 @@
   }
 }
 
+// Packs
+
+.flat-description-2 {
+  margin-left: 70px;
+  width: 30%;
+  h2 {
+    font-family: "Roboto";
+    margin-bottom: 40px;
+    color: $protectoris-darkblue;
+  }
+  h6 {
+    font-family: "Roboto";
+    font-weight: 300;
+    color: $protectoris-midgray;
+  }
+}
+
+.flat-banner-2 {
+  background-image: image-url("Protectoris_Pack-appart-2.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 55vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.flat-offer-2 {
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+strong {
+  text-decoration: line-through;
+}
+
+h5 {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: $protectoris-midgray;
+  font-weight: 500;
+}
+
+em {
+  color: red;
+  font-style: normal;
+}
+
+.pack-offer-left {
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.home-banner-1 {
+  background-image: image-url("Protectoris_Pack-Maison-1.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 55vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.pack-description-right {
+  margin-right: 70px;
+  width: 30%;
+  h2 {
+    font-family: "Roboto";
+    margin-bottom: 40px;
+    color: $protectoris-darkblue;
+  }
+  h6 {
+    font-family: "Roboto";
+    font-weight: 300;
+    color: $protectoris-midgray;
+  }
+}
+
+.home-banner-2 {
+  background-image: image-url("Protectoris_Pack-Maison-2.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 55vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.home-banner-3 {
+  background-image: image-url("Protectoris_Pack-Maison-3.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 55vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
 // Intermediate
 
 .question-offer {
@@ -148,7 +262,12 @@
 
 .detecteur-offer {
   padding-top: 90px;
+  padding-bottom: 90px;
   background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .detecteur-offer-banner {
@@ -173,7 +292,52 @@
 
 .detecteur-offer-footer {
   background-color: white;
+  display: block;
 }
+
+  .centrale-offer {
+    padding-top: 90px;
+    background-color: white;
+
+  }
+
+  .centrale-offer-title {
+    h1 {
+      margin: 0;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 50px;
+  }
+
+  .centrale-offer-banner {
+    p {
+      font-size: 15px;
+      font-weight: 300;
+
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .centrale-offer-description {
+    margin-right: 50px;
+  }
+
+  .big-product-image {
+    height: 600px;
+  }
 
   // MOBILE CLASSES REMOVED
 
