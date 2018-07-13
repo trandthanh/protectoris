@@ -147,15 +147,18 @@
   }
 }
 
-strong {
-  text-decoration: line-through;
-}
+
 
 h5 {
   font-family: "Roboto";
   font-weight: 300;
   color: $protectoris-midgray;
   font-weight: 500;
+
+  strong {
+    text-decoration: line-through;
+  }
+
 }
 
 em {
@@ -338,6 +341,17 @@ em {
   .big-product-image {
     height: 600px;
   }
+
+  .product-image-spegarage {
+    height: 400px;
+    padding: 50px;
+  }
+
+  .product-image-pad30 {
+    height: 400px;
+    padding: 30px;
+  }
+
 
   // MOBILE CLASSES REMOVED
 

@@ -1,4 +1,4 @@
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 414px) {
 
   .protectoris-navbar {
     position: fixed;
@@ -107,7 +107,7 @@
 
   .offer-navbar {
     background-color: $protectoris-blue;
-    height: 115px;
+    height: 130px;
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -132,11 +132,12 @@
 
   .offer-icons {
     display: flex;
+    align-items: center;
   }
 
   .pack-link {
     padding: 10px;
-    width: 165px;
+    width: 250px;
   }
 
   // Mobile Removed
@@ -161,7 +162,7 @@
 
 // MOBILE
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 414px) {
 
   .protectoris-navbar {
     position: fixed;
@@ -250,9 +251,9 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
 
     a {
       color: white;
@@ -306,7 +307,7 @@
   .offer-navbar {
     background-color: $protectoris-lightgray;
     margin-top: 140px;
-    height: 115px;
+    height: 130px;
     display: flex;
     justify-content: center;
     padding: 5px;
