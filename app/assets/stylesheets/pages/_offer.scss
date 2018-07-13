@@ -5,7 +5,7 @@
   }
 
 .offer-banner {
-  margin-top: 215px;
+  margin-top: 118px;
   height: 70vh;
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.4) 50%), image-url("offer-banner.jpg");
   background-size: cover;
@@ -122,6 +122,17 @@
   }
 }
 
+.flat-banner-1 {
+  background-image: image-url("Protectoris_Pack-appart-1.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 55vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 .flat-banner-2 {
   background-image: image-url("Protectoris_Pack-appart-2.jpg");
   background-size: contain;
@@ -133,7 +144,7 @@
   margin-right: 50px;
 }
 
-.flat-offer-2 {
+.pack-offer-left {
   background-color: white;
 
   display: flex;
@@ -141,6 +152,22 @@
   align-items: center;
 
   padding-top: 100px;
+  padding-bottom: 100px;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.pack-offer-right {
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   h2 {
     margin-top: 0;
@@ -166,20 +193,7 @@ em {
   font-style: normal;
 }
 
-.pack-offer-left {
-  background-color: white;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  h2 {
-    margin-top: 0;
-  }
-}
 
 .home-banner-1 {
   background-image: image-url("Protectoris_Pack-Maison-1.jpg");
@@ -350,6 +364,12 @@ em {
   .product-image-pad30 {
     height: 400px;
     padding: 30px;
+  }
+
+  .accessories-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
   }
 
 

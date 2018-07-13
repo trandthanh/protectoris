@@ -1,4 +1,4 @@
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 769px) {
 
   .protectoris-navbar {
     position: fixed;
@@ -156,13 +156,20 @@
     display: none;
   }
 
+  .offer-navbar-mobile {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
 }
 
 
 
-// MOBILE
+// MOBILE SIZE
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 768px) {
 
   .protectoris-navbar {
     position: fixed;
@@ -304,7 +311,7 @@
 
   // Offer Navbar
 
-  .offer-navbar {
+  .offer-navbar-mobile {
     background-color: $protectoris-lightgray;
     margin-top: 140px;
     height: 130px;
@@ -356,6 +363,13 @@
   }
 
   .buy-button {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
+  .offer-navbar {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;

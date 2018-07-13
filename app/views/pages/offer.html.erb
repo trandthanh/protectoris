@@ -4,8 +4,10 @@
   <%= link_to "VOIR NOS PACKS", offer_path(anchor: "apartement"), class: "call-to-action-button-transparent"  %>
 </div>
 
-<div class="flat-offer-1" id="apartement">
-  <div class="flat-description">
+<div class="pack-offer-left" id="apartement">
+  <div class="flat-banner-1"></div>
+
+  <div class="pack-description-right">
     <h2>Découvrez notre Pack Appartement (jusqu'à 2 pièces)</h2>
     <h6>Ce pack a été conçu pour des appartements avec au maximum 2 pièces et une seule porte d'entrée : <br>
       • 1 centrale Wifi-GSM avec sirène incorporée <br>
@@ -20,7 +22,7 @@
 </div>
 
 <div class="mobile-offer">
-  <div class="flat-description-mobile">
+  <div class="flat-description-mobile" id="appartement-mobile">
     <h2>Découvrez notre Pack Appartement (jusqu'à 2 pièces)</h2>
   </div>
   <div class="flat-offer-1-mobile"></div>
@@ -40,7 +42,7 @@
   </div>
 </div>
 
-<div class="flat-offer-2">
+<div class="pack-offer-right">
   <div class="flat-description-2">
     <h2>Découvrez notre Pack Appartement (jusqu'à 4 pièces)</h2>
     <h6>Ce pack a été conçu pour des appartements avec au maximum 4 pièces :
@@ -89,7 +91,7 @@
 </div>
 
 <div class="mobile-offer">
-  <div class="flat-description-mobile">
+  <div class="flat-description-mobile" id="home-mobile">
     <h2>Découvrez notre Pack Maison (Petite Maison)</h2>
   </div>
   <div class="home-offer-1-mobile"></div>
@@ -103,7 +105,7 @@
   </div>
 </div>
 
-<div class="flat-offer-2">
+<div class="pack-offer-right">
   <div class="flat-description-2">
     <h2>Découvrez notre Pack Grande Maison</h2>
     <h6>Ce pack a été conçu pour des maisons avec un parking et 2 niveaux : <br>
@@ -185,396 +187,405 @@
   <%= link_to "VOIR NOS ACCESSOIRES", offer_path(anchor: "accessories"), class: "call-to-action-button"  %>
 </div>
 
-<div class="centrale-offer">
-  <div class="centrale-offer-title">
-    <h1>UNE CENTRALE AU COEUR DE CHAQUE PACK</h1>
-    <div id="line"></div>
-  </div>
 
-  <div class="centrale-offer-banner">
-    <%= image_tag ("0_Protectoris-V2L.jpg"), class: "big-product-image" %>
-    <div class="centrale-offer-description">
-      <h3>La nouvelle version de Protectoris possède un clavier tactile, un écran LCD en couleur et un lecteur de badge intégré.</h3>
-      <p>
-        • Microprocesseur 32 bits faible consommation <br>
-        • Transmission d'alerte : Notification par Push et/ou Appel téléphonique et/ou SMS à 4 personnes, Carte SIM compatible (Free 2€, Prixtel 2€ réseau Orange ou SFR, B&You) <br>
-        • Pilotage à distance : Application iPhone et Android en 3G et 4G, Pilotage secours en SMS <br>
-        • Paramétrage : Par clavier intégré et écran LCD ou App sur mobiles <br>
-        • Sirène intégrée : 108 dB programmable pour chaque détecteur <br>
-        • Fréquences de réception et transmission : 868 Mhz éléments sans fil, fréquence GSM européen, 2.4 Ghz (Wifi B/G/N) <br>
-        • Distance de transmission/réception (en espace ouverte): jusqu'à 200 mètres <br>
-        • Supervision des détecteurs : Réglable de 1h à 99h <br>
-        • Protection anti-sabotage : Arrachage, coupure de courant (autonomie 6h) <br>
-        • Capacité de réception éléments sans fil : 32 détecteurs, 8 télécommandes, 4 sirènes et 16 interrupteurs sans fil <br>
-        • Entrées et sortie filaires : 8 entrées détecteurs ou clés, 1 sortie sirène, 1 sortie pour module volets <br>
-        • Fonctions des détecteurs : Partielle, Totale, Carillon, Délai, 24h, Panique et Incendie <br>
-        • Alimentation : 12V, adaptateur 220V fourni <br>
-        • Dimension (H x L x P) : 192 x 250 x 36 mm <br>
-        • Garantie : 2 ans
-      </p>
+
+
+<div class="accessories-section">
+
+  <div class="centrale-offer" id="appartement-mobile">
+    <div class="centrale-offer-title">
+      <h1>UNE CENTRALE AU COEUR DE CHAQUE PACK</h1>
+      <div id="line"></div>
     </div>
-  </div>
-</div>
 
-<div class="detecteur-offer" id="accessories">
-  <div class="detecteur-offer-title">
-    <h1>DETECTEURS / INTERIEUR</h1>
-    <div id="line"></div>
-  </div>
-  <div class="detecteur-offer-banner">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("detecteur-ouverture.jpg"), class: "product-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Détecteur ouverture</h3>
-          </div>
-        </div>
-        <div class="product-card-content">
-          <p>
-            • Utilisation pour porte et fenêtre <br>
-            • Communication codée 36 bits en 868 Mhz <br>
-            • Portée radio en champ libre : 150 mètres <br>
-            • Anti sabotage et Auto-supervision <br>
-            • Température de fonctionnement : -10°C à 50°C <br>
-            • Alimentation : 1 pile CR123, autonomie 24 à 36 mois <br>
-            • Dimension (H x L x P) : 69.5 x 21.2 x 19.5 mm (transmetteur), 34.5 x 10 x 13.2 mm (aimant)
-            </p>
-        </div>
+    <div class="centrale-offer-banner">
+      <%= image_tag ("0_Protectoris-V2L.jpg"), class: "big-product-image" %>
+      <div class="centrale-offer-description">
+        <h3>La nouvelle version de Protectoris possède un clavier tactile, un écran LCD en couleur et un lecteur de badge intégré.</h3>
+        <p>
+          • Microprocesseur 32 bits faible consommation <br>
+          • Transmission d'alerte : Notification par Push et/ou Appel téléphonique et/ou SMS à 4 personnes, Carte SIM compatible (Free 2€, Prixtel 2€ réseau Orange ou SFR, B&You) <br>
+          • Pilotage à distance : Application iPhone et Android en 3G et 4G, Pilotage secours en SMS <br>
+          • Paramétrage : Par clavier intégré et écran LCD ou App sur mobiles <br>
+          • Sirène intégrée : 108 dB programmable pour chaque détecteur <br>
+          • Fréquences de réception et transmission : 868 Mhz éléments sans fil, fréquence GSM européen, 2.4 Ghz (Wifi B/G/N) <br>
+          • Distance de transmission/réception (en espace ouverte): jusqu'à 200 mètres <br>
+          • Supervision des détecteurs : Réglable de 1h à 99h <br>
+          • Protection anti-sabotage : Arrachage, coupure de courant (autonomie 6h) <br>
+          • Capacité de réception éléments sans fil : 32 détecteurs, 8 télécommandes, 4 sirènes et 16 interrupteurs sans fil <br>
+          • Entrées et sortie filaires : 8 entrées détecteurs ou clés, 1 sortie sirène, 1 sortie pour module volets <br>
+          • Fonctions des détecteurs : Partielle, Totale, Carillon, Délai, 24h, Panique et Incendie <br>
+          • Alimentation : 12V, adaptateur 220V fourni <br>
+          • Dimension (H x L x P) : 192 x 250 x 36 mm <br>
+          • Garantie : 2 ans
+        </p>
+        <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button" %>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("detecteur-mouvement.jpg"), class: "product-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Détecteur mouvement</h3>
-          </div>
-        </div>
-        <div class="product-card-content">
-          <p>
-            • Utilisation à l’intérieur <br>
-            • Communication codée 36 bits en 868 Mhz <br>
-            • Portée radio en champ libre : 150 mètres <br>
-            • Angle de détection 90°, longueur 12 mètres <br>
-            • Anti sabotage et Auto-supervision <br>
-            • Température de fonctionnement : 10°C à 60°C <br>
-            • Alimentation : 1 pile CR123, autonomie 24 à 36 mois <br>
-            • Dimension (H x L x P) : 108 x 58 x 40.5 mm <br>
-          </p>
-        </div>
-      </div>
+  </div>
+
+  <div class="detecteur-offer" id="accessories">
+    <div class="detecteur-offer-title">
+      <h1>DETECTEURS / INTERIEUR</h1>
+      <div id="line"></div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("detecteur-garage.jpg"), class: "product-image-spegarage" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Détecteur Garage</h3>
+    <div class="detecteur-offer-banner">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("detecteur-ouverture.jpg"), class: "product-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Détecteur ouverture</h3>
+            </div>
           </div>
           <div class="product-card-content">
             <p>
-              • Utilisation pour porte sectionnelle ou basculante <br>
+              • Utilisation pour porte et fenêtre <br>
               • Communication codée 36 bits en 868 Mhz <br>
-              • Portée radio en champ libre : 200 mètres <br>
-              • Transmetteur anti sabotage et Auto-supervision  <br>
+              • Portée radio en champ libre : 150 mètres <br>
+              • Anti sabotage et Auto-supervision <br>
               • Température de fonctionnement : -10°C à 50°C <br>
-              • Alimentation : 1 pile CR123, autonomie env. 18 mois <br>
-              • Dimension (H x L x P) : 80 x 32 x 25 mm (sabot au sol), 74 x 12 x 20 mm (aimant sur porte), 80 x 30 x 28 mm (transmetteur)
-            </p>
+              • Alimentation : 1 pile CR123, autonomie 24 à 36 mois <br>
+              • Dimension (H x L x P) : 69.5 x 21.2 x 19.5 mm (transmetteur), 34.5 x 10 x 13.2 mm (aimant)
+              </p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="detecteur-offer-footer text-center">
-    <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button-no-m" %>
-  </div>
-</div>
-
-<!-- Detecteurs Exté -->
-
-<div class="detecteur-offer padding-top-small">
-  <div class="detecteur-offer-title">
-    <h1>DETECTEURS / EXTERIEUR</h1>
-    <div id="line"></div>
-  </div>
-  <div class="detecteur-offer-banner">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("detecteur-balcon.jpg"), class: "product-image margin-image product-image-pad30" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Détecteur Balcon</h3>
-          </div>
-        </div>
-        <div class="product-card-content">
-          <p>
-            • Double-faisceaux réglable de 2 à 5 mètres <br>
-            • Base Optex FTN-R <br>
-            • Communication codée 36 bits en 868 Mhz <br>
-            • Portée radio en champ libre : 200 mètres <br>
-            • Anti sabotage et Auto-supervision <br>
-            • Température de fonctionnement : -20°C à 60°C <br>
-            • Alimentation : 2 piles CR123, autonomie 24 à 36 mois <br>
-            • Dimension (H x L x P) : 152 x 42 x 70 mm
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("detecteur-barriere-white.jpg"), class: "product-image margin-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Détecteur Barrière Extérieur</h3>
-          </div>
-        </div>
-        <div class="product-card-content">
-          <p>
-            • Double-faisceaux réglable de 2,5 à 12 mètres de chaque côté <br>
-            • Nouvelle base Optex BXS-R <br>
-            • Communication codée 36 bits en 868 Mhz <br>
-            • Portée radio en champ libre : 200 mètres <br>
-            • Anti sabotage et Auto-supervision. Option Antimasque <br>
-            • Température de fonctionnement : -30°C à 60°C <br>
-            • Alimentation : 1 pile CR123 et 1 pile 9V, autonomie 24 à 36 mois <br>
-            • Dimension (H x L x P) : 200 x 92.8 x 98.7 mm
-            </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("detecteur-exterieure-90.jpg"), class: "product-image margin-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Détecteur Extérieur 90°</h3>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("detecteur-mouvement.jpg"), class: "product-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Détecteur mouvement</h3>
+            </div>
           </div>
           <div class="product-card-content">
             <p>
-              • Double-plans infrarouge réglable de 2,5 à 12 mètres <br>
-              • Nouvelle base Optex VXS-RAM. Option hyperfréquence <br>
+              • Utilisation à l’intérieur <br>
+              • Communication codée 36 bits en 868 Mhz <br>
+              • Portée radio en champ libre : 150 mètres <br>
+              • Angle de détection 90°, longueur 12 mètres <br>
+              • Anti sabotage et Auto-supervision <br>
+              • Température de fonctionnement : 10°C à 60°C <br>
+              • Alimentation : 1 pile CR123, autonomie 24 à 36 mois <br>
+              • Dimension (H x L x P) : 108 x 58 x 40.5 mm <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("detecteur-garage.jpg"), class: "product-image-spegarage" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Détecteur Garage</h3>
+            </div>
+            <div class="product-card-content">
+              <p>
+                • Utilisation pour porte sectionnelle ou basculante <br>
+                • Communication codée 36 bits en 868 Mhz <br>
+                • Portée radio en champ libre : 200 mètres <br>
+                • Transmetteur anti sabotage et Auto-supervision  <br>
+                • Température de fonctionnement : -10°C à 50°C <br>
+                • Alimentation : 1 pile CR123, autonomie env. 18 mois <br>
+                • Dimension (H x L x P) : 80 x 32 x 25 mm (sabot au sol), 74 x 12 x 20 mm (aimant sur porte), 80 x 30 x 28 mm (transmetteur)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="detecteur-offer-footer text-center">
+      <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button-no-m" %>
+    </div>
+  </div>
+
+  <!-- Detecteurs Exté -->
+
+  <div class="detecteur-offer padding-top-small">
+    <div class="detecteur-offer-title">
+      <h1>DETECTEURS / EXTERIEUR</h1>
+      <div id="line"></div>
+    </div>
+    <div class="detecteur-offer-banner">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("detecteur-balcon.jpg"), class: "product-image margin-image product-image-pad30" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Détecteur Balcon</h3>
+            </div>
+          </div>
+          <div class="product-card-content">
+            <p>
+              • Double-faisceaux réglable de 2 à 5 mètres <br>
+              • Base Optex FTN-R <br>
               • Communication codée 36 bits en 868 Mhz <br>
               • Portée radio en champ libre : 200 mètres <br>
-              • Anti sabotage, anti masquage et Auto-supervision <br>
+              • Anti sabotage et Auto-supervision <br>
+              • Température de fonctionnement : -20°C à 60°C <br>
+              • Alimentation : 2 piles CR123, autonomie 24 à 36 mois <br>
+              • Dimension (H x L x P) : 152 x 42 x 70 mm
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("detecteur-barriere-white.jpg"), class: "product-image margin-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Détecteur Barrière Extérieur</h3>
+            </div>
+          </div>
+          <div class="product-card-content">
+            <p>
+              • Double-faisceaux réglable de 2,5 à 12 mètres de chaque côté <br>
+              • Nouvelle base Optex BXS-R <br>
+              • Communication codée 36 bits en 868 Mhz <br>
+              • Portée radio en champ libre : 200 mètres <br>
+              • Anti sabotage et Auto-supervision. Option Antimasque <br>
               • Température de fonctionnement : -30°C à 60°C <br>
               • Alimentation : 1 pile CR123 et 1 pile 9V, autonomie 24 à 36 mois <br>
-              • Dimension (H x L x P) : 200 x 91.6 x 70.3 mm
+              • Dimension (H x L x P) : 200 x 92.8 x 98.7 mm
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("detecteur-exterieure-90.jpg"), class: "product-image margin-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Détecteur Extérieur 90°</h3>
+            </div>
+            <div class="product-card-content">
+              <p>
+                • Double-plans infrarouge réglable de 2,5 à 12 mètres <br>
+                • Nouvelle base Optex VXS-RAM. Option hyperfréquence <br>
+                • Communication codée 36 bits en 868 Mhz <br>
+                • Portée radio en champ libre : 200 mètres <br>
+                • Anti sabotage, anti masquage et Auto-supervision <br>
+                • Température de fonctionnement : -30°C à 60°C <br>
+                • Alimentation : 1 pile CR123 et 1 pile 9V, autonomie 24 à 36 mois <br>
+                • Dimension (H x L x P) : 200 x 91.6 x 70.3 mm
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="detecteur-offer-footer text-center">
+      <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button-no-m" %>
+    </div>
+  </div>
+
+
+  <!-- Detecteurs Spécifiques -->
+
+  <div class="detecteur-offer padding-top-small">
+    <div class="detecteur-offer-title">
+      <h1>DETECTEURS / SPECIFIQUES</h1>
+      <div id="line"></div>
+    </div>
+    <div class="detecteur-offer-banner">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("detecteur-inondation.jpg"), class: "product-image margin-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Détecteur Inondation</h3>
+            </div>
+          </div>
+          <div class="product-card-content">
+            <p>
+              • Détecte la présence d’eau <br>
+              • Communication codée 36 bits en 868 Mhz <br>
+              • Portée radio en champ libre : 150 mètres <br>
+              • Anti sabotage et Auto-supervision <br>
+              • Température de fonctionnement : -10°C à 50°C <br>
+              • Alimentation : 2 piles AAA, autonomie env. 18 mois <br>
+              • Dimension (H x L x P) : 77 x 34 x 29 mm (transmetteur)
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="detecteur-offer-footer text-center">
-    <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button-no-m" %>
-  </div>
-</div>
-
-
-<!-- Detecteurs Spécifiques -->
-
-<div class="detecteur-offer padding-top-small">
-  <div class="detecteur-offer-title">
-    <h1>DETECTEURS / SPECIFIQUES</h1>
-    <div id="line"></div>
-  </div>
-  <div class="detecteur-offer-banner">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("detecteur-inondation.jpg"), class: "product-image margin-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Détecteur Inondation</h3>
-          </div>
-        </div>
-        <div class="product-card-content">
-          <p>
-            • Détecte la présence d’eau <br>
-            • Communication codée 36 bits en 868 Mhz <br>
-            • Portée radio en champ libre : 150 mètres <br>
-            • Anti sabotage et Auto-supervision <br>
-            • Température de fonctionnement : -10°C à 50°C <br>
-            • Alimentation : 2 piles AAA, autonomie env. 18 mois <br>
-            • Dimension (H x L x P) : 77 x 34 x 29 mm (transmetteur)
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("detecteur-vibration.jpg"), class: "product-image margin-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Détecteur Vibration</h3>
-          </div>
-        </div>
-        <div class="product-card-content">
-          <p>
-            • 4 niveaux de sensibilité <br>
-            • Communication codée 36 bits en 868 Mhz <br>
-            • Portée radio en champ libre : 200 mètres <br>
-            • Anti sabotage et Auto-supervision <br>
-            • Température de fonctionnement : -10°C à 50°C <br>
-            • Alimentation : 1 pile CR2032, autonomie 28 à 24 mois <br>
-            • Dimension (H x L x P) : 70 x 23 x 12 mm
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("transmetteur-universel.jpg"), class: "product-image margin-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Transmetteur Universel</h3>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("detecteur-vibration.jpg"), class: "product-image margin-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Détecteur Vibration</h3>
+            </div>
           </div>
           <div class="product-card-content">
             <p>
-              • 1 entrée filaire NO ou NF <br>
+              • 4 niveaux de sensibilité <br>
               • Communication codée 36 bits en 868 Mhz <br>
               • Portée radio en champ libre : 200 mètres <br>
               • Anti sabotage et Auto-supervision <br>
               • Température de fonctionnement : -10°C à 50°C <br>
-              • Alimentation : 1 pile CR123, autonomie 24 à 36 mois <br>
-              • Dimension (H x L x P) : 80 x 30 x 28 mm
+              • Alimentation : 1 pile CR2032, autonomie 28 à 24 mois <br>
+              • Dimension (H x L x P) : 70 x 23 x 12 mm
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="detecteur-offer-footer text-center">
-    <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button-no-m" %>
-  </div>
-</div>
-
-
-<!-- Sirènes -->
-
-<div class="detecteur-offer padding-top-small">
-  <div class="detecteur-offer-title">
-    <h1>SIRENES</h1>
-    <div id="line"></div>
-  </div>
-  <div class="detecteur-offer-banner">
-    <div class="col-xs-12 col-sm-6">
-      <div class="product-card text-center">
-        <%= image_tag ("sirene-interieur.jpg"), class: "product-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Sirène Flash Intérieur</h3>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("transmetteur-universel.jpg"), class: "product-image margin-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Transmetteur Universel</h3>
+            </div>
+            <div class="product-card-content">
+              <p>
+                • 1 entrée filaire NO ou NF <br>
+                • Communication codée 36 bits en 868 Mhz <br>
+                • Portée radio en champ libre : 200 mètres <br>
+                • Anti sabotage et Auto-supervision <br>
+                • Température de fonctionnement : -10°C à 50°C <br>
+                • Alimentation : 1 pile CR123, autonomie 24 à 36 mois <br>
+                • Dimension (H x L x P) : 80 x 30 x 28 mm
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="product-card-content">
-          <p>
-            • Puissance 110 dB avec flash rouge <br>
-            • Communication codée 36 bits en 868 Mhz <br>
-            • Portée radio en champ libre : 80 mètres <br>
-            • Anti sabotage et Auto-supervision <br>
-            • Température de fonctionnement : -10°C à 50°C <br>
-            • Alimentation : Pile rechargeable et transformateur fourni <br>
-            • Dimension (D x P) : 130 x 40 mm
-            </p>
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6">
-      <div class="product-card text-center">
-        <%= image_tag ("11-sirene-exterieure.jpg"), class: "product-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Sirène Flash Extérieur</h3>
-          </div>
-        </div>
-        <div class="product-card-content">
-          <p>
-            • Puissance 108 dB avec flash rouge <br>
-            • Communication codée 36 bits en 868 Mhz <br>
-            • Portée radio en champ libre : 80 mètres <br>
-            • Anti sabotage et Auto-supervision <br>
-            • Température de fonctionnement : -10°C à 50°C <br>
-            • Alimentation : 4 piles LR20 <br>
-            • Dimension (H x L x P) : 270 x 190 x 160 mm
-          </p>
-        </div>
-      </div>
+    <div class="detecteur-offer-footer text-center">
+      <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button-no-m" %>
     </div>
   </div>
-  <div class="detecteur-offer-footer text-center">
-    <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button-no-m" %>
-  </div>
-</div>
 
-<!-- COMMANDES -->
 
-<div class="detecteur-offer padding-top-small pad-bot">
-  <div class="detecteur-offer-title">
-    <h1>COMMANDES</h1>
-    <div id="line"></div>
-  </div>
-  <div class="detecteur-offer-banner">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("clavier.png"), class: "product-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Clavier</h3>
-          </div>
-        </div>
-        <div class="product-card-content">
-          <p>
-            • Lecteur de badge intégré, affichage rétroéclairé <br>
-            • Communication codée 36 bits en 868 Mhz <br>
-            • Portée radio en champ libre : 80 mètres <br>
-            • Anti sabotage et Auto-supervision <br>
-            • Température de fonctionnement : 10°C à 50°C <br>
-            • Alimentation : pile rechargeable 6 mois (chargeur fourni) <br>
-            • Dimension (H x L x P) : 150 x 90 x 15 mm
-          </p>
-        </div>
-      </div>
+  <!-- Sirènes -->
+
+  <div class="detecteur-offer padding-top-small">
+    <div class="detecteur-offer-title">
+      <h1>SIRENES</h1>
+      <div id="line"></div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("telecommande.jpg"), class: "product-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Télécommande</h3>
-          </div>
-        </div>
-        <div class="product-card-content">
-          <p>
-            • 4 touches (Totale, Partielle, Arrêt et SOS) <br>
-            • Communication codée 36 bits en 868 Mhz <br>
-            • Portée radio en champ libre : 120 mètres <br>
-            • Alimentation : 1 pile CR2450, autonomie env. 24 mois <br>
-            • Dimension (H x L x P) : 72 x 32x 10 mm
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="product-card text-center">
-        <%= image_tag ("badge.jpg"), class: "product-image" %>
-        <div class="product-card-description">
-          <div class="product-card-title">
-            <h3>Badge</h3>
+    <div class="detecteur-offer-banner">
+      <div class="col-xs-12 col-sm-6">
+        <div class="product-card text-center">
+          <%= image_tag ("sirene-interieur.jpg"), class: "product-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Sirène Flash Intérieur</h3>
+            </div>
           </div>
           <div class="product-card-content">
             <p>
-              • Technologie RFID <br>
-              • Etanche <br>
-              • Dimension (H x L x P) : 36 x 27 x 2 mm
+              • Puissance 110 dB avec flash rouge <br>
+              • Communication codée 36 bits en 868 Mhz <br>
+              • Portée radio en champ libre : 80 mètres <br>
+              • Anti sabotage et Auto-supervision <br>
+              • Température de fonctionnement : -10°C à 50°C <br>
+              • Alimentation : Pile rechargeable et transformateur fourni <br>
+              • Dimension (D x P) : 130 x 40 mm
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="product-card text-center">
+          <%= image_tag ("11-sirene-exterieure.jpg"), class: "product-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Sirène Flash Extérieur</h3>
+            </div>
+          </div>
+          <div class="product-card-content">
+            <p>
+              • Puissance 108 dB avec flash rouge <br>
+              • Communication codée 36 bits en 868 Mhz <br>
+              • Portée radio en champ libre : 80 mètres <br>
+              • Anti sabotage et Auto-supervision <br>
+              • Température de fonctionnement : -10°C à 50°C <br>
+              • Alimentation : 4 piles LR20 <br>
+              • Dimension (H x L x P) : 270 x 190 x 160 mm
             </p>
           </div>
         </div>
       </div>
     </div>
+    <div class="detecteur-offer-footer text-center">
+      <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button-no-m" %>
+    </div>
   </div>
-  <div class="detecteur-offer-footer text-center">
-    <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button-no-m" %>
+
+  <!-- COMMANDES -->
+
+  <div class="detecteur-offer padding-top-small pad-bot">
+    <div class="detecteur-offer-title">
+      <h1>COMMANDES</h1>
+      <div id="line"></div>
+    </div>
+    <div class="detecteur-offer-banner">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("clavier.png"), class: "product-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Clavier</h3>
+            </div>
+          </div>
+          <div class="product-card-content">
+            <p>
+              • Lecteur de badge intégré, affichage rétroéclairé <br>
+              • Communication codée 36 bits en 868 Mhz <br>
+              • Portée radio en champ libre : 80 mètres <br>
+              • Anti sabotage et Auto-supervision <br>
+              • Température de fonctionnement : 10°C à 50°C <br>
+              • Alimentation : pile rechargeable 6 mois (chargeur fourni) <br>
+              • Dimension (H x L x P) : 150 x 90 x 15 mm
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("telecommande.jpg"), class: "product-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Télécommande</h3>
+            </div>
+          </div>
+          <div class="product-card-content">
+            <p>
+              • 4 touches (Totale, Partielle, Arrêt et SOS) <br>
+              • Communication codée 36 bits en 868 Mhz <br>
+              • Portée radio en champ libre : 120 mètres <br>
+              • Alimentation : 1 pile CR2450, autonomie env. 24 mois <br>
+              • Dimension (H x L x P) : 72 x 32x 10 mm
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="product-card text-center">
+          <%= image_tag ("badge.jpg"), class: "product-image" %>
+          <div class="product-card-description">
+            <div class="product-card-title">
+              <h3>Badge</h3>
+            </div>
+            <div class="product-card-content">
+              <p>
+                • Technologie RFID <br>
+                • Etanche <br>
+                • Dimension (H x L x P) : 36 x 27 x 2 mm
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="detecteur-offer-footer text-center">
+      <%= link_to "Commander", "http://www.alarme-camera.fr/118-alarme-protectoris", class: "call-to-action-button-no-m" %>
+    </div>
   </div>
+
 </div>
+
 

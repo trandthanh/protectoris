@@ -30,30 +30,51 @@
   <div class="items-navbar-mobile">
    <%= link_to "NOS PRODUITS", offer_path %>
    <%= link_to "COMPARER", comparison_path %>
-   <%= link_to "QUI SOMMES-NOUS ?", about_path %>
-   <a href="http://www.alarme-camera.fr/118-alarme-protectoris" target="_blank" class="buy-button" id="white">COMMANDER</a>
   </div>
 </div>
 
 <div class="offer-navbar">
-    <div class="offer-icons text-center">
-        <div class="pack-link" id="pack-appart">
-          <%= link_to offer_path(:anchor => "apartement") do %>
-            <%= image_tag ("apartment-icon.png"), class: "navbar-icon" %>
-            <h6>Packs Appartement</h6>
-          <% end %>
-        </div>
-        <div class="pack-link">
-          <%= link_to anchor: "home" do %>
-            <%= image_tag ("home-icon.png"), class: "navbar-icon" %>
-            <h6>Packs Maison</h6>
-          <% end %>
-        </div>
-        <div class="pack-link">
-          <%= link_to :anchor => "accessories" do %>
-            <%= image_tag ("accessories-icon.png"), class: "navbar-icon" %>
-            <h6>Accessoires</h6>
-          <% end %>
-        </div>
-    </div>
+  <div class="offer-icons text-center">
+      <div class="pack-link" id="pack-appart">
+        <%= link_to offer_path(:anchor => "apartement") do %>
+          <%= image_tag ("apartment-icon.png"), class: "navbar-icon" %>
+          <h6>Packs Appartement</h6>
+        <% end %>
+      </div>
+      <div class="pack-link">
+        <%= link_to anchor: "home" do %>
+          <%= image_tag ("home-icon.png"), class: "navbar-icon" %>
+          <h6>Packs Maison</h6>
+        <% end %>
+      </div>
+      <div class="pack-link">
+        <%= link_to :anchor => "accessories" do %>
+          <%= image_tag ("accessories-icon.png"), class: "navbar-icon" %>
+          <h6>Accessoires</h6>
+        <% end %>
+      </div>
   </div>
+</div>
+
+<div class="offer-navbar-mobile">
+  <div class="offer-icons text-center">
+      <div class="pack-link">
+        <%= link_to offer_path(:anchor => "apartement-mobile") do %>
+          <%= image_tag ("apartment-icon.png"), class: "navbar-icon" %>
+          <h6>Packs Appartement</h6>
+        <% end %>
+      </div>
+      <div class="pack-link">
+        <%= link_to anchor: "home-mobile" do %>
+          <%= image_tag ("home-icon.png"), class: "navbar-icon" %>
+          <h6>Packs Maison</h6>
+        <% end %>
+      </div>
+      <div class="pack-link">
+        <%= link_to :anchor => "accessories-mobile" do %>
+          <%= image_tag ("accessories-icon.png"), class: "navbar-icon" %>
+          <h6>Accessoires</h6>
+        <% end %>
+      </div>
+  </div>
+</div>
