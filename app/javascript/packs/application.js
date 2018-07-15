@@ -16,3 +16,10 @@ if (offerNavbar) { navbarClick() };
 if (offerNavbar) { navbarScrollUp() };
 if (offerNavbar) { navbarScrollDown() };
 
+import { navbarMobileClick } from '../navbarmobile';
+import { navbarMobileScrollUp } from '../navbarmobile';
+import { navbarMobileScrollDown } from '../navbarmobile';
+const offerNavbarMobile = document.querySelector('.offer-navbar-mobile');
+if (offerNavbarMobile) { navbarMobileClick() };
+if (offerNavbarMobile) { navbarMobileScrollUp() };
+if (offerNavbarMobile) { navbarMobileScrollDown() };

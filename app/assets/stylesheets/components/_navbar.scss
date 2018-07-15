@@ -314,9 +314,11 @@
   .offer-navbar-mobile {
     background-color: $protectoris-lightgray;
     margin-top: 140px;
-    height: 130px;
+    height: 115px;
+
     display: flex;
     justify-content: center;
+
     padding: 5px;
     position: fixed;
     width: 100%;
@@ -327,6 +329,7 @@
     h6 {
       color: white;
       font-size: 12px;
+      margin-bottom: 0;
 
         &:hover {
           text-decoration: none;
@@ -336,12 +339,12 @@
 
   }
 
-  .offer-icons {
+  .offer-icons-mobile {
     display: flex;
     width: 100%;
   }
 
-  .pack-link {
+  .pack-link-mobile {
     padding: 10px;
     width: 165px;
   }
@@ -375,6 +378,4 @@
     left: -9999px !important;
     display: none;
   }
-
-
 }
