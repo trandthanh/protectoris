@@ -382,6 +382,13 @@ em {
     display: none;
   }
 
+  .offer-banner-mobile {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
 }
 
 
@@ -391,7 +398,7 @@ em {
 
 @media only screen and (max-width: 768px) {
 
-  .offer-banner {
+  .offer-banner-mobile {
     height: 70vh;
     background-image: linear-gradient(-225deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.7) 50%), image-url("offer-banner.jpg");
     background-size: cover;
@@ -430,14 +437,17 @@ em {
 
   .mobile-offer {
     background-color: white;
+    padding-bottom: 30px;
   }
 
-  .flat-offer-1-mobile {
-    background-image: image-url("pack-appartement-1-mobile.png");
+  .flat-banner-1-mobile {
+    background-image: image-url("Protectoris_Pack-appart-1.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 35vh;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .flat-description-mobile {
@@ -464,12 +474,14 @@ em {
     }
   }
 
-  .flat-offer-2-mobile {
-    background-image: image-url("pack-appartement-2-mobile.png");
+  .flat-banner-2-mobile {
+    background-image: image-url("Protectoris_Pack-appart-2.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 35vh;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .flat-description {
@@ -487,20 +499,34 @@ em {
     }
   }
 
-  .home-offer-1-mobile {
-    background-image: image-url("pack-maison-1-mobile.png");
+  .home-banner-1-mobile {
+    background-image: image-url("Protectoris_Pack-Maison-1.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 35vh;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
-  .home-offer-2-mobile {
-    background-image: image-url("pack-maison-2-mobile.png");
+  .home-banner-2-mobile {
+    background-image: image-url("Protectoris_Pack-Maison-2.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 35vh;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .home-banner-3-mobile {
+    background-image: image-url("Protectoris_Pack-Maison-3.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .home-description {
@@ -548,6 +574,72 @@ em {
 
 
   // Accessories
+
+  .centrale-offer {
+    background-color: white;
+
+    padding-top: 50px;
+  }
+
+  .centrale-offer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align: center;
+
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  .centrale-offer-banner {
+    p {
+      font-size: 14px;
+      font-weight: 300;
+
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .centrale-offer-description {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .big-product-image {
+    height: 65vh;
+  }
+
+  .product-image-spegarage {
+    height: 400px;
+    padding: 50px;
+  }
+
+  .product-image-pad30 {
+    height: 400px;
+    padding: 30px;
+  }
+
+  .accessories-section {
+    padding-bottom: 50px;
+    background-color: white;
+  }
 
   .detecteur-offer {
     background-color: white;
@@ -611,5 +703,25 @@ em {
     display: none;
   }
 
+  .offer-banner {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
+  .pack-offer-left {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
+
+  .pack-offer-right {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
 }
 
