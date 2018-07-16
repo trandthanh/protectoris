@@ -136,12 +136,11 @@
   }
 
   .centrale-container {
-    background-image: image-url("protectoris-centrale-main.png");
-    background-size: cover;
-    background-position: right;
     height: 85vh;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+
     h2 {
       font-family: "Roboto";
       margin-bottom: 40px;
@@ -157,6 +156,16 @@
     padding-left: 150px;
     width: 40%;
     vertical-align: center;
+  }
+
+  .centrale-home {
+    background-image: image-url("0_Protectoris-V2L.jpg");
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+
+    width: 50%;
+    height: 70vh;
   }
 
   .detecteur-container {
@@ -535,7 +544,7 @@
   }
 
   .centrale-container-mobile {
-    background-image: image-url("protectoris-centrale-main-mobile.png");
+    background-image: image-url("0_Protectoris-V2L.jpg");
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;

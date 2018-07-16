@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 769px) {
 
   .comparison-wrapper {
     margin-top: 100px;
@@ -37,6 +37,11 @@
     flex-direction: column;
   }
 
+  .comparison-table {
+    h6 {
+      margin-bottom: 40px;
+    }
+  }
 
 }
 

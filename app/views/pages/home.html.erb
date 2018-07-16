@@ -110,12 +110,12 @@
 
 <!-- 3. Pack Intro -->
 
-<div class="pack-wrapper text-center">
+<!-- <div class="pack-wrapper text-center">
   <div class="pack-text text-center">
     <h2>DE QUOI SE COMPOSENT NOS PACKS ?</h2>
     <p>Nos packs ont été préconçus en fonction de vos retours: Pack Appartement, Pack Maison. Aucun de ces packs ne vous convient ? Aucun problème ! Nos packs sont entièrement personnalisables. </p>
     <p>L'équipe Protectoris reste à votre service et à votre écoute. Notre personnel technique basé à Paris vous assistera gratuitement par téléphone. Notre matériel est garanti 2 ans. </p>
-    <%= link_to "VOIR NOS PACKS", offer_path, class: "call-to-action-button"  %>
+    <%#= link_to "VOIR NOS PACKS", offer_path, class: "call-to-action-button"  %>
   </div>
 </div>
 
@@ -127,40 +127,35 @@
     </div>
     <p>Nos packs ont été préconçus en fonction de vos retours: Pack Appartement, Pack Maison. Aucun de ces packs ne vous convient ? Aucun problème ! Nos packs sont entièrement personnalisables. </p>
     <p>L'équipe Protectoris reste à votre service et à votre écoute. Notre personnel technique basé à Paris vous assistera gratuitement par téléphone. Notre matériel est garanti 2 ans. </p>
-    <%= link_to "VOIR NOS PACKS", offer_path, class: "call-to-action-button-mobile"  %>
+    <%#= link_to "VOIR NOS PACKS", offer_path, class: "call-to-action-button-mobile"  %>
   </div>
-</div>
+</div> -->
 
 
 <!-- 4. Produit -->
 
 <div class="product-wrapper">
+
   <div class="centrale-container">
     <div class="centrale-text">
       <h2>UNE CENTRALE COMPACTE</h2>
       <p>Le lecteur de badge intégré rend l’utilisation du système simple pour les enfants et les personne âgées. Le clavier tactile permet la mise en marche ou l'arret de l’alarme avec un code secret. L'affichage de l'écran en couleur avec son menu simplifié facilite le paramétrage de l'appareil. Une sirène 108dB, un support pour carte SIM et une antenne Wifi y sont également intégrés.</p>
-      <%= link_to root_path, class: "voir-plus-link" do %>
-        <i class="fas fa-caret-right"></i> Spécificités techniques
-      <% end %>
-      <%= link_to root_path, class: "voir-plus-link" do %>
-        <i class="fas fa-caret-right"></i> Paramétrage facile
+      <%= link_to offer_path(anchor: "centrale"), class: "voir-plus-link" do %>
+        <i class="fas fa-caret-right"></i> Spécificités
       <% end %>
     </div>
+    <div class="centrale-home"></div>
   </div>
 
   <div class="mobile">
     <div class="centrale-text-mobile">
-        <h2>UNE CENTRALE COMPACTE</h2>
-      </div>
-    <div class="centrale-container-mobile">
+      <h2>UNE CENTRALE COMPACTE</h2>
     </div>
+    <div class="centrale-container-mobile"></div>
     <p>Le lecteur de badge intégré rend l’utilisation du système simple pour les enfants et les personne âgées. Le clavier tactile permet la mise en marche ou l'arret de l’alarme avec un code secret. L'affichage de l'écran en couleur avec son menu simplifié facilite le paramétrage de l'appareil. Une sirène 108dB, un support pour carte SIM et une antenne Wifi y sont également intégrés.</p>
     <div class="centrale-link-mobile">
-      <%= link_to root_path, class: "voir-plus-link-mobile" do %>
-        <i class="fas fa-caret-right"></i> Spécificités techniques
-      <% end %>
-      <%= link_to root_path, class: "voir-plus-link-mobile" do %>
-        <i class="fas fa-caret-right"></i> Paramétrage facile
+      <%= link_to offer_path(anchor: "centrale"), class: "voir-plus-link-mobile" do %>
+        <i class="fas fa-caret-right"></i> Spécificités
       <% end %>
     </div>
   </div>
@@ -194,7 +189,8 @@
   <div class="sirene-container">
     <div class="sirene-text">
       <h2>LA DOMOTIQUE SIMPLE</h2>
-      <p>Nous vous proposons un récepteur 220V sans fil pilotable et programmable en plage horaire, déclencheur de scénario pour Somfy-Tahoma et commande de fermeture de volets pour Somfy RTS, IO et Bubendorff.</p>
+      <p>Le module Actionneur en option permet de fermer ou ouvrir automatiquement les volets mortorisés (Somfy, Bubendorff, etc.) quand l’alarme est déclenchée. Couplée à une Tahoma de Somfy, une scénario peut être lancée. <br>
+      L’application sur mobiles permet de piloter jusqu’à 16 lumières ou appareils électriques à travers le récepteur sans fil. Une programmation de simulation de présence est aussi possible.</p>
       <%= link_to root_path, class: "voir-plus-link" do %>
         <i class="fas fa-caret-right"></i> En savoir plus
       <% end %>
@@ -206,7 +202,8 @@
       <h2>LA DOMOTIQUE SIMPLE</h2>
     </div>
     <div class="domotique-container-mobile"></div>
-    <p>Nous vous proposons un récepteur 220V sans fil pilotable et programmable en plage horaire, déclencheur de scénario pour Somfy-Tahoma et commande de fermeture de volets pour Somfy RTS, IO et Bubendorff.</p>
+    <p>Le module Actionneur en option permet de fermer ou ouvrir automatiquement les volets mortorisés (Somfy, Bubendorff, etc.) quand l’alarme est déclenchée. Couplée à une Tahoma de Somfy, une scénario peut être lancée. <br>
+    L’application sur mobiles permet de piloter jusqu’à 16 lumières ou appareils électriques à travers le récepteur sans fil. Une programmation de simulation de présence est aussi possible.</p>
     <div class="centrale-link-mobile">
       <%= link_to root_path, class: "voir-plus-link-mobile" do %>
         <i class="fas fa-caret-right"></i> En savoir plus
@@ -218,10 +215,7 @@
   <div class="mobile-container">
     <div class="mobile-text">
       <h2>TOUJOURS DANS VOTRE POCHE</h2>
-      <p>Votre système est contrôlable via l'application mobile. De plus, grâce aux SMS et notifications push selon votre paramétrage, Protectoris vous alerte à la moindre anomalie.</p>
-      <%= link_to root_path, class: "voir-plus-link" do %>
-        <i class="fas fa-caret-right"></i> Utilisation simple
-      <% end %>
+      <p>A la maison, votre système est contrôlable par les petites badges ou les mini télécommandes. A distance, votre système est contrôlable via l'application mobile. De plus, grâce aux appels vocaux, SMS et notifications push, Protectoris vous alerte à la moindre anomalie.</p>
     </div>
   </div>
 
@@ -230,12 +224,7 @@
       <h2>TOUJOURS DANS VOTRE POCHE</h2>
     </div>
     <div class="mobile-container-mobile"></div>
-    <p>Votre système est contrôlable via l'application mobile. De plus, grâce aux SMS et notifications push selon votre paramétrage, Protectoris vous alerte à la moindre anomalie.</p>
-    <div class="centrale-link-mobile">
-      <%= link_to root_path, class: "voir-plus-link-mobile" do %>
-        <i class="fas fa-caret-right"></i> Utilisation simple
-      <% end %>
-    </div>
+    <p>A la maison, votre système est contrôlable par les petites badges ou les mini télécommandes. A distance, votre système est contrôlable via l'application mobile. De plus, grâce aux appels vocaux, SMS et notifications push, Protectoris vous alerte à la moindre anomalie.</p>
   </div>
 
   <div class="review-banner">
@@ -297,7 +286,7 @@
           <h5 id="price">
             <br>*pour le pack 2 pièces
           </h5>
-        <%= link_to "COMMANDER", "http://www.alarme-camera.fr/118-alarme-protectoris", target: "_blank", class: "call-to-action-button-transparent"  %>
+        <%= link_to "VOIR", offer_path, class: "call-to-action-button-transparent"  %>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
@@ -308,7 +297,7 @@
           <h5 id="price">
             <br>*pour le pack standard Maison
           </h5>
-        <%= link_to "COMMANDER", "http://www.alarme-camera.fr/118-alarme-protectoris", target: "_blank", class: "call-to-action-button-transparent"  %>
+        <%= link_to "VOIR", offer_path, class: "call-to-action-button-transparent"  %>
         </div>
       </div>
     </div>
