@@ -1,4 +1,4 @@
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 769px) {
 
   .about-wrapper {
     margin-top: 100px;
@@ -35,14 +35,17 @@
     padding-top: 80px;
     padding-bottom: 80px;
     p {
-      width: 50%;
+      width: 80%;
+    }
+    a {
+      color: $protectoris-blue;
     }
   }
 
 }
 
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 768px) {
 
   .about-wrapper {
     margin-top: 140px;
@@ -84,6 +87,9 @@
     padding-right: 20px;
     p {
       font-size: 16px;
+    }
+    a {
+      color: $protectoris-blue;
     }
   }
 
