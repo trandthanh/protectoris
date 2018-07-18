@@ -1,0 +1,5 @@
+meta_product_name: "Protectoris"
+meta_title: "Protectoris - L'alarme sans fil à installer soi-même"
+meta_description: "Protectoris est un système d'alarme sans fil performant et simple à installer crée par une équipe d'experts."
+meta_image: "cover.png"                       # should exist in `app/assets/images/`
+twitter_account: "@trandgthanh"   # required for Twitter Cards
