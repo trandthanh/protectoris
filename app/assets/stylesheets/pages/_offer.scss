@@ -151,8 +151,8 @@
   justify-content: center;
   align-items: center;
 
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
+  padding-top: 70px;
 
   h2 {
     margin-top: 0;
@@ -166,8 +166,8 @@
   justify-content: center;
   align-items: center;
 
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
+  padding-top: 70px;
 
   h2 {
     margin-top: 0;
@@ -261,7 +261,7 @@ em {
     color: $protectoris-darkblue;
   }
   p {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -329,6 +329,11 @@ em {
     flex-direction: column;
 
     margin-bottom: 50px;
+
+    padding-left: 40px;
+    padding-right: 50px;
+
+    text-align: center;
   }
 
   .centrale-offer-banner {
