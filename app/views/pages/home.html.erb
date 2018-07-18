@@ -164,7 +164,7 @@
     <div class="detecteur-text">
       <h2>UN LARGE CHOIX DE DETECTEURS</h2>
       <p>Des détecteurs à microprocesseurs pour l’extérieur complètent la gamme des détecteurs d’intrusion pour l’intérieur.</p>
-      <%= link_to root_path, class: "voir-plus-link" do %>
+      <%= link_to offer_path(anchor: "accessories"), class: "voir-plus-link" do %>
         <i class="fas fa-caret-right"></i> Nos détecteurs
       <% end %>
     </div>
@@ -178,7 +178,7 @@
     </div>
     <p>Des détecteurs à microprocesseurs pour l’extérieur complètent la gamme des détecteurs d’intrusion pour l’intérieur.</p>
     <div class="centrale-link-mobile">
-      <%= link_to root_path, class: "voir-plus-link-mobile" do %>
+      <%= link_to offer_path(anchor: "accessories"), class: "voir-plus-link-mobile" do %>
         <i class="fas fa-caret-right"></i> Nos détecteurs
       <% end %>
     </div>
@@ -205,6 +205,18 @@
 
 
   <div class="mobile-container">
+    <div class="mobile-pictures">
+      <div class="row mobile-row">
+        <%= image_tag "Iphone-appel-vocal.png", class: "mobile-items"%>
+        <%= image_tag "Iphone-domotique.png", class: "mobile-items"%>
+        <%= image_tag "Iphone-parametrage.png", class: "mobile-items"%>
+      </div>
+      <div class="row mobile-row">
+        <%= image_tag "Iphone-pilotage.png", class: "mobile-items"%>
+        <%= image_tag "Iphone-push.png", class: "mobile-items"%>
+        <%= image_tag "Iphone-SMS.png", class: "mobile-items"%>
+      </div>
+    </div>
     <div class="mobile-text">
       <h2>TOUJOURS DANS VOTRE POCHE</h2>
       <p>A la maison, votre système est contrôlable par les petites badges ou les mini télécommandes. A distance, votre système est contrôlable via l'application mobile. De plus, grâce aux appels vocaux, SMS et notifications push, Protectoris vous alerte à la moindre anomalie.</p>
@@ -215,7 +227,20 @@
     <div class="centrale-text-mobile text-center">
       <h2>TOUJOURS DANS VOTRE POCHE</h2>
     </div>
-    <div class="mobile-container-mobile"></div>
+    <div class="mobile-container-mobile">
+      <div class="row mobile-row-mobile">
+        <%= image_tag "Iphone-appel-vocal.png", class: "mobile-items-mobile"%>
+        <%= image_tag "Iphone-domotique.png", class: "mobile-items-mobile"%>
+      </div>
+      <div class="row mobile-row-mobile">
+        <%= image_tag "Iphone-parametrage.png", class: "mobile-items-mobile"%>
+        <%= image_tag "Iphone-pilotage.png", class: "mobile-items-mobile"%>
+      </div>
+      <div class="row mobile-row-mobile">
+        <%= image_tag "Iphone-push.png", class: "mobile-items-mobile"%>
+        <%= image_tag "Iphone-SMS.png", class: "mobile-items-mobile"%>
+      </div>
+    </div>
     <p>A la maison, votre système est contrôlable par les petites badges ou les mini télécommandes. A distance, votre système est contrôlable via l'application mobile. De plus, grâce aux appels vocaux, SMS et notifications push, Protectoris vous alerte à la moindre anomalie.</p>
   </div>
 
@@ -245,7 +270,7 @@
           <%= image_tag ("man-avatar.png"), class: "review-avatar" %>
           <h4>PJ8IiRUW</h4>
           <h6>17-10-2015</h6>
-          <h5>Très satisfait de PROTRECTORIS</h5>
+          <h5>Très satisfait !</h5>
           <p>"Je viens d'opter, sur les conseils de TS3V, pour leur nouvelle solution PROTECTORIS, encore plus optimisée en prix, afin d'équiper ma résidence secondaire. Le rapport qualité-prix est juste excellent et je continue à être très confiant dans les conseils prodigués par l'équipe TS3V."</p>
       </a>
         </div>

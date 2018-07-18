@@ -216,14 +216,15 @@
   }
 
   .mobile-container {
-    background-image: image-url("protectoris-mobile-banner.png");
-    background-size: cover;
-    background-position: center;
+    background-color: white;
+
     height: 90vh;
-    //position: relative;
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    margin-bottom: 50px;
     h2 {
       font-family: "Roboto";
       margin-bottom: 40px;
@@ -233,6 +234,26 @@
       font-size: 16px;
       color: $protectoris-midgray;
     }
+  }
+
+  .mobile-pictures {
+    width: 50%;
+    height: 90%;
+
+    position: absolute;
+    left: 30px;
+
+  }
+
+  .mobile-row {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 30px;
+  }
+
+  .mobile-items {
+    height: 250px;
   }
 
   .mobile-text {
@@ -507,7 +528,7 @@
       color: $protectoris-midgray;
     }
     p {
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 300;
       color: $protectoris-midgray;
     }
@@ -616,11 +637,7 @@
   }
 
   .mobile-container-mobile {
-    background-image: image-url("protectoris-mobile-banner-main.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 35vh;
+    background-color: white;
   }
 
   .mobile-text {
@@ -629,6 +646,17 @@
     margin-right: 100px;
     width: 400px;
     vertical-align: center;
+  }
+
+  .mobile-row-mobile {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 30px;
+  }
+
+  .mobile-items-mobile {
+    height: 200px;
   }
 
 
@@ -661,10 +689,12 @@
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
@@ -692,6 +722,7 @@
       margin-left: 20px;
       margin-right: 20px;
       margin-bottom: 30px;
+      text-align: center;
     }
   }
 
@@ -708,8 +739,7 @@
     p {
       font-size: 16px;
       color: $protectoris-midgray;
-      width: 600px;
-      display: inline-block;
+      padding: 10px;
     }
   }
 
