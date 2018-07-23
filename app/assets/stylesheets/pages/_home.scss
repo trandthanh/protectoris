@@ -160,7 +160,6 @@
 
   .centrale-home {
     background-image: image-url("0_Protectoris-V2L.jpg");
-    background-color: red;
     background-size: cover;
     background-position: center;
 
@@ -236,20 +235,15 @@
   }
 
   .mobile-pictures {
+    background-image: image-url("5-ecran");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
     width: 50%;
-    height: 90%;
+    height: 70vh;
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-  }
-
-  .mobile-row {
-    display: flex;
-    justify-content: space-around;
-
-    margin: 30px;
+    margin-right: 50px;
   }
 
   .mobile-items {
