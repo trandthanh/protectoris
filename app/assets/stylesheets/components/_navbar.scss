@@ -380,3 +380,329 @@
     display: none;
   }
 }
+
+
+
+// IE
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+
+  @media only screen and (min-width: 769px) {
+
+    .protectoris-navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      box-sizing: border-box;
+      box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+      z-index: 20;
+    }
+
+    .upper-navbar {
+      height: 30px;
+      background-color: $protectoris-darkblue;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+
+    .contact-navbar {
+      font-size: 14px;
+      font-weight: 300;
+      margin-left: 30px;
+      color: white;
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: $protectoris-blue;
+        }
+      }
+    }
+
+    i {
+      margin-right: 10px;
+    }
+
+    .fa-phone {
+      font-size: 13px;
+    }
+
+    .lower-navbar {
+      height: 70px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .logo-navbar {
+      height: 50px;
+      margin-left: 20px;
+    }
+
+    .buy-button {
+      background-color: $protectoris-blue;
+      border-radius: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 170px;
+      font-family: "Monda", "Helvetica", "Open Sans";
+      letter-spacing: 1px;
+      border: 2px solid $protectoris-blue;
+
+      text-align: center;
+      &:hover {
+        border: 2px solid $protectoris-blue;
+        background: white;
+        color: $protectoris-blue;
+        &:after {
+          position: relative;
+        }
+      }
+    }
+
+    #white {
+      color: white;
+      &:hover {
+        color: $protectoris-blue;
+      }
+    }
+
+    .items-navbar {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      letter-spacing: 0.2px;
+      a {
+        text-decoration: none;
+        color: $protectoris-midgray;
+        font-weight: medium;
+        &:hover {
+          text-decoration: none;
+          color: $protectoris-lightgray;
+        }
+      }
+    }
+
+    // Offer Navbar
+
+    .offer-navbar {
+      display: none;
+    }
+
+    // Mobile Removed
+
+    .items-navbar-mobile {
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
+      display: none;
+    }
+
+    .upper-navbar-mobile {
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
+      display: none;
+    }
+
+    .offer-navbar-mobile {
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
+      display: none;
+    }
+
+  }
+
+
+
+  // MOBILE SIZE
+
+  @media only screen and (max-width: 768px) {
+
+    .protectoris-navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+      z-index: 20;
+    }
+
+    // CONTACT
+
+    .upper-navbar-mobile {
+      height: 30px;
+      background-color: $protectoris-darkblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .contact-navbar-phone {
+      font-size: 12px;
+      font-weight: 300;
+
+
+      color: white;
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: $protectoris-blue;
+        }
+      }
+    }
+
+
+    .contact-navbar {
+      font-size: 12px;
+      font-weight: 300;
+      margin-left: 30px;
+
+      color: white;
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: $protectoris-blue;
+        }
+      }
+    }
+
+    i {
+      margin-right: 10px;
+    }
+
+    .fa-phone {
+      font-size: 13px;
+    }
+
+    // MENU
+
+    .lower-navbar {
+      height: 70px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .logo-navbar {
+      height: 50px;
+    }
+
+    .items-navbar-mobile {
+      background-color: $protectoris-blue;
+      height: 40px;
+      font-size: 15px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      a {
+        color: white;
+      }
+    }
+
+    .buy-button {
+      background-color: $protectoris-blue;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-family: "Monda", "Helvetica", "Open Sans";
+      letter-spacing: 1px;
+      width: 190px;
+      text-align: center;
+      &:hover {
+        border: 2px solid $protectoris-blue;
+        background: white;
+        color: $protectoris-blue;
+        &:after {
+          position: relative;
+        }
+      }
+    }
+
+    #white {
+      color: white;
+      &:hover {
+        color: $protectoris-blue;
+      }
+    }
+
+    .items-navbar {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      letter-spacing: 0.2px;
+      a {
+        text-decoration: none;
+        color: $protectoris-midgray;
+        font-weight: medium;
+        &:hover {
+          text-decoration: none;
+          color: $protectoris-lightgray;
+        }
+      }
+    }
+
+    // Offer Navbar
+
+    .offer-navbar-mobile {
+      display: none;
+    }
+
+    // DESKTOP REMOVED
+
+    .items-navbar {
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
+      display: none;
+    }
+
+    .upper-navbar {
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
+      display: none;
+    }
+
+    .buy-button {
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
+      display: none;
+    }
+
+    .offer-navbar {
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
+      display: none;
+    }
+  }
+
+}
