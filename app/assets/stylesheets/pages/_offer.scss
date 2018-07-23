@@ -404,7 +404,7 @@ em {
 @media only screen and (max-width: 768px) {
 
   .offer-banner-mobile {
-    height: 70vh;
+    height: 100vh;
     background-image: linear-gradient(-225deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.7) 50%), image-url("offer-banner.jpg");
     background-size: cover;
     background-position: center;
@@ -419,6 +419,8 @@ em {
       font-family: "Roboto";
       color: white;
       margin-bottom: 30px;
+      padding-left: 20px;
+      margin-right: 20px;
     }
     p {
       font-size: 16px;
