@@ -445,6 +445,12 @@ em {
   .mobile-offer {
     background-color: white;
     padding-bottom: 30px;
+    h5 {
+      font-family: "Monda";
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   .flat-banner-1-mobile {
@@ -458,7 +464,9 @@ em {
   }
 
   .flat-description-mobile {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -478,6 +486,10 @@ em {
       color: $protectoris-midgray;
       font-family: "Roboto";
       margin: 10px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 300;
     }
   }
 
