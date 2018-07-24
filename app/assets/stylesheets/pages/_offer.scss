@@ -178,21 +178,17 @@
 
 h5 {
   font-family: "Roboto";
-  font-weight: 300;
-  color: $protectoris-midgray;
+  color: $protectoris-darkblue;
   font-weight: 500;
+  font-size: 20px;
 
-  strong {
-    text-decoration: line-through;
-  }
-
+  margin-top: 20px;
 }
 
 em {
-  color: red;
   font-style: normal;
+  font-weight: 300;
 }
-
 
 
 .home-banner-1 {
@@ -446,7 +442,9 @@ em {
     background-color: white;
     padding-bottom: 30px;
     h5 {
-      font-family: "Monda";
+      font-family: "Roboto";
+      font-weight: 500;
+      color: $protectoris-darkblue;
       padding-bottom: 20px;
       padding-left: 10px;
       padding-right: 10px;
