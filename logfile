@@ -1,0 +1,11 @@
+2018-07-25 10:56:50.544 CEST [3694] LOG:  listening on IPv6 address "::1", port 5432
+2018-07-25 10:56:50.544 CEST [3694] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-07-25 10:56:50.545 CEST [3694] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-07-25 10:56:50.558 CEST [3695] LOG:  database system was shut down at 2018-07-25 10:56:39 CEST
+2018-07-25 10:56:50.562 CEST [3694] LOG:  database system is ready to accept connections
+2018-07-25 10:56:58.344 CEST [3738] FATAL:  database "protectoris_development" does not exist
+2018-07-25 11:00:18.686 CEST [4027] FATAL:  database "js30_development" does not exist
+2018-07-25 11:05:34.019 CEST [3694] LOG:  received smart shutdown request
+2018-07-25 11:05:34.020 CEST [3694] LOG:  worker process: logical replication launcher (PID 3701) exited with exit code 1
+2018-07-25 11:05:34.031 CEST [3696] LOG:  shutting down
+2018-07-25 11:05:34.037 CEST [3694] LOG:  database system is shut down
